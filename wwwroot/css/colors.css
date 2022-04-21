@@ -1,0 +1,17 @@
+﻿#movieText {
+    background-color:red !important;
+    color: black;
+}
+#Favorites {
+    background-color: orangered !important;
+}
+
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#name{
+    color: red !important;
+}
+#FavMov {
+    color: orangered !important;
+}

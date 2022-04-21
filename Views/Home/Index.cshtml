@@ -1,0 +1,73 @@
+﻿@model MovieListViewModel
+@{
+    ViewData["Title"] = "Movies";
+}
+
+<div class="row">
+    <div class="col-sm-3">
+        <h3 class="mt-3">Genres</h3>
+        <div class="list-group">
+            @foreach (Genre g in Model.Genres)
+            {
+                <a asp-action="Index"
+                   asp-route-activeGenre="@g.GenreID"
+                   asp-route-activeMember="@Model.ActiveMember"
+                   class="list-group-item @Model.CheckActiveGenre(g.GenreID)">
+                    @g.Name
+                </a>
+            }
+        </div>
+        <h3 class="mt-3">Members</h3>
+        <div class="list-group">
+            @foreach (Member m in Model.Members)
+            { 
+                <a asp-action="Index"
+                   asp-route-activeGenre="@Model.ActiveGenre"
+                   asp-route-activeMember="@m.MemberID"
+                   class="list-group-item @Model.CheckActiveMember(m.MemberID)">
+                    @m.Name
+                </a>
+            }
+        </div>
+    </div>
+    <div class="col-sm-9">
+        @foreach (Member m in Model.Members)
+        {
+            @if (m.MemberID != "all" && m.MemberID == Model.ActiveMember)
+            {
+                <h4 id="name">
+                   Name: @m.Name
+                </h4>
+                <br />
+                <h4>
+                  Year:  @m.Year
+                </h4>
+                <br />
+                <h4>
+                   Major: @m.Major
+                </h4>
+                <br />
+                <h4>
+                   Bio: @m.Bio
+                </h4>
+                <br />
+                <h4 id="FavMov">
+                   Favorite Movies:
+                </h4>
+                <br />
+            }
+
+        }
+        <ul class="list-inline">
+            @foreach (Movie movie in Model.Movies)
+            {
+                <li class="list-inline-item">
+                    <a asp-action="Details" asp-route-id="@movie.MovieID">
+                        <img src="~/images/@movie.LogoImage" alt="@movie.Name"
+                             title="@movie.Name | @movie.Genre.Name @movie.Member.Name" />
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

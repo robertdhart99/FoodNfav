@@ -1,0 +1,48 @@
+﻿@model MovieListViewModel
+@{
+    ViewData["Title"] = "Favorites";
+    var session = new Movies7Session(Context.Session);   // get session
+}
+
+<div class="text-center">
+    <h2>@(session.GetName() == null ? "My" : session.GetName() + "'s") Favorites</h2>
+    <form asp-action="Delete" method="post">
+        <a asp-action="Index" asp-controller="Home" class="btn btn-primary"
+           asp-route-activeGenre="@Model.ActiveGenre"
+           asp-route-activeMember="@Model.ActiveMember">
+            Back to Home Page
+        </a>
+        <!-- add button to edit name -->
+        <a asp-action="Index" asp-controller="Name" class="btn btn-primary">
+            Change Name
+        </a>
+        <button type="submit" class="btn btn-primary">
+            Clear Favorites
+        </button>
+    </form>
+    <br />
+</div>
+
+
+<div class="row">
+    <div class="col-8 offset-2">
+        <ul class="list-group">
+            @foreach (Movie movie in Model.Movies)
+            {
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="~/images/@movie.LogoImage" alt="" />
+                        </div>
+                        <div class="col-sm-4">
+                            @movie.Name
+                        </div>
+                        <div class="col-sm-4">
+                            @movie.Genre.Name @movie.Member.Name
+                        </div>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

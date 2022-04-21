@@ -1,0 +1,21 @@
+﻿@model MovieListViewModel
+@{
+    ViewData["Title"] = "Name Change";
+}
+
+<div class="text-center">
+    <h2>Name Change</h2>
+    <form asp-action="Change" method="post">
+    
+        <input asp-for="@Model.UserName" placeholder="Type name here" class="mb-3" />
+        <br />
+        <a asp-action="Index" asp-controller="Home" class="btn btn-primary"
+           asp-route-activeGenre ="@Model.ActiveGenre" 
+           asp-route-activeMember="@Model.ActiveMember">
+            Back to Home Page
+        </a>
+        <button type="submit" class="btn btn-primary">
+            Change Name
+        </button>
+    </form>
+</div>
