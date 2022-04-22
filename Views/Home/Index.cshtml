@@ -1,6 +1,6 @@
-﻿@model MovieListViewModel
+﻿@model FoodListViewModel
 @{
-    ViewData["Title"] = "Movies";
+    ViewData["Title"] = "Foods";
 }
 
 <div class="row">
@@ -51,20 +51,20 @@
                    Bio: @m.Bio
                 </h4>
                 <br />
-                <h4 id="FavMov">
-                   Favorite Movies:
+                <h4 id="FavFoods">
+                   Favorite Foods:
                 </h4>
                 <br />
             }
 
         }
         <ul class="list-inline">
-            @foreach (Movie movie in Model.Movies)
+            @foreach (Food food in Model.Foods)
             {
                 <li class="list-inline-item">
-                    <a asp-action="Details" asp-route-id="@movie.MovieID">
-                        <img src="~/images/@movie.LogoImage" alt="@movie.Name"
-                             title="@movie.Name | @movie.Genre.Name @movie.Member.Name" />
+                    <a asp-action="Details" asp-route-id="@food.FoodID">
+                        <img src="~/images/@food.LogoImage" alt="@food.Name"
+                             title="@food.Name | @food.Genre.Name @food.Member.Name" />
                     </a>
                 </li>
             }

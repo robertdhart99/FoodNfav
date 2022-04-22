@@ -1,4 +1,4 @@
-﻿namespace Movies7.Models
+﻿namespace FoodFavorites.Models
 {
     public class Genre
     {

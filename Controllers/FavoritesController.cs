@@ -1,21 +1,21 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
 
-using Movies7.Models;
+using FoodFavorites.Models;
 
-namespace Movies7.Controllers
+namespace FoodFavorites.Controllers
 {
     public class FavoritesController : Controller
     {
         [HttpGet]
         public ViewResult Index()
         {
-            var session = new Movies7Session(HttpContext.Session);
-            var model = new MovieListViewModel
+            var session = new FoodFavoritesSession(HttpContext.Session);
+            var model = new FoodListViewModel
             {
                 ActiveGenre = session.GetActiveGenre(),
                 ActiveMember = session.GetActiveMember(),
-                Movies = session.GetMyMovies(),
+                Foods = session.GetMyFoods(),
                 UserName = session.GetName()
             };
 
@@ -25,13 +25,13 @@ namespace Movies7.Controllers
         [HttpPost]
         public RedirectToActionResult Delete()
         {
-            var session = new Movies7Session(HttpContext.Session);
-            var cookies = new Movies7Cookies(HttpContext.Response.Cookies);
+            var session = new FoodFavoritesSession(HttpContext.Session);
+            var cookies = new FoodFavoritesCookies(HttpContext.Response.Cookies);
 
-            session.RemoveMyMovies();
-            cookies.RemoveMyMovieIds();
+            session.RemoveMyFoods();
+            cookies.RemoveMyFoodsIds();
 
-            TempData["message"] = "Favorite movies cleared";
+            TempData["message"] = "Favorite Foods cleared";
 
             return RedirectToAction("Index", "Home",
                 new {

@@ -1,8 +1,8 @@
-﻿namespace Movies7.Models
+﻿namespace FoodFavorites.Models
 {
-    public class Movie
+    public class Food
     {
-        public string MovieID { get; set; }
+        public string FoodID { get; set; }
         public string Name { get; set; }
         public Genre Genre { get; set; }
         public Member Member { get; set; }

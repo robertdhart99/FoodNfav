@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Movies7.Migrations
+namespace FoodFavorites.Migrations
 {
     public partial class Initial : Migration
     {
@@ -31,7 +31,7 @@ namespace Movies7.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Movies",
+                name: "Foods",
                 columns: table => new
                 {
                     MovieID = table.Column<string>(nullable: false),
@@ -81,8 +81,8 @@ namespace Movies7.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Movies",
-                columns: new[] { "MovieID", "GenreID", "LogoImage", "MemberID", "Name" },
+                table: "Foods",
+                columns: new[] { "FoodID", "GenreID", "LogoImage", "MemberID", "Name" },
                 values: new object[,]
                 {
                     { "shrek", "com", "", null, "Shrek" },
@@ -110,19 +110,19 @@ namespace Movies7.Migrations
 
             migrationBuilder.CreateIndex(
                 name: "IX_Movies_GenreID",
-                table: "Movies",
+                table: "Foods",
                 column: "GenreID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Movies_MemberID",
-                table: "Movies",
+                table: "Foods",
                 column: "MemberID");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Movies");
+                name: "Foods");
 
             migrationBuilder.DropTable(
                 name: "Genres");

@@ -4,43 +4,43 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Http;
 
-namespace Movies7.Models
+namespace FoodFavorites.Models
 {
-    public class Movies7Cookies
+    public class FoodFavoritesCookies
     {
-        private const string MoviesKey = "mymovies";
+        private const string FoodsKey = "myfoods";
         private const string Delimiter = "-";
 
         private IRequestCookieCollection requestCookies { get; set; }
         private IResponseCookies responseCookies { get; set; }
-        public Movies7Cookies(IRequestCookieCollection cookies) {
+        public FoodFavoritesCookies(IRequestCookieCollection cookies) {
             requestCookies = cookies;
         }
-        public Movies7Cookies(IResponseCookies cookies) {
+        public FoodFavoritesCookies(IResponseCookies cookies) {
             responseCookies = cookies;
         }
 
-        public void SetMyMoviesIds(List<Movie> mymovies)
+        public void SetMyFoodsIds(List<Food> myfoods)
         {
-            List<string> ids = mymovies.Select(t => t.MovieID).ToList();
+            List<string> ids = myfoods.Select(t => t.FoodID).ToList();
             string idsString = String.Join(Delimiter, ids);
             CookieOptions options = new CookieOptions { Expires = DateTime.Now.AddDays(30) };
-            RemoveMyMovieIds();     // delete old cookie first
-            responseCookies.Append(MoviesKey, idsString, options);
+            RemoveMyFoodsIds();     // delete old cookie first
+            responseCookies.Append(FoodsKey, idsString, options);
         }
 
-        public string[] GetMyMovieIds()
+        public string[] GetMyFoodsIds()
         {
-            string cookie = requestCookies[MoviesKey];
+            string cookie = requestCookies[FoodsKey];
             if (string.IsNullOrEmpty(cookie))
                 return new string[] { };   // empty string array
             else
                 return cookie.Split(Delimiter);
         }      
 
-        public void RemoveMyMovieIds()
+        public void RemoveMyFoodsIds()
         {
-            responseCookies.Delete(MoviesKey);
+            responseCookies.Delete(FoodsKey);
         }
     }
 }

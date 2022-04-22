@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Movies7.Migrations
+namespace FoodFavorites.Migrations
 {
     public partial class AboutUs : Migration
     {

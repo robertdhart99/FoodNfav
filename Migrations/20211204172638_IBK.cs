@@ -1,14 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Movies7.Migrations
+namespace FoodFavorites.Migrations
 {
     public partial class IBK : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.InsertData(
-                table: "Movies",
-                columns: new[] { "MovieID", "GenreID", "LogoImage", "MemberID", "Name" },
+                table: "Foods",
+                columns: new[] { "FoodID", "GenreID", "LogoImage", "MemberID", "Name" },
                 values: new object[,]
                 {
                     { "anchor", "com", "anchor_man.png", "har", "Anchor Man" },
@@ -24,38 +24,38 @@ namespace Movies7.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DeleteData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "anchor");
 
             migrationBuilder.DeleteData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "dodgeball");
 
             migrationBuilder.DeleteData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "free");
 
             migrationBuilder.DeleteData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "hog");
 
             migrationBuilder.DeleteData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "par");
 
             migrationBuilder.DeleteData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "rn");
 
             migrationBuilder.DeleteData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "ttb");
         }
     }
