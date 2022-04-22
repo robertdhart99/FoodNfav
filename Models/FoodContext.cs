@@ -39,10 +39,10 @@ namespace FoodFavorites.Models
                new { FoodID = "shrek4", Name = "Srishant Snack food name here", GenreID = "snk", MemberID = "bur", LogoImage = "shrek_4.png" },
 
                //Robert - swap out foodID,Name & the IMG reference for your foods img reference. 
-               new { FoodID = "westernOmelette", Name = "Western Omelette", GenreID = "brk", MemberID = "har", LogoImage = "longest_yard.png" },
-               new { FoodID = "pirates", Name = "Pirates of the Caribbean", GenreID = "lun", MemberID = "har", LogoImage = "pirates_caribbean.png" },
-               new { FoodID = "October", Name = "October Sky", GenreID = "din", MemberID = "har", LogoImage = "october_sky.png" },
-               new { FoodID = "princess", Name = "Princess Bride", GenreID = "snk", MemberID = "har", LogoImage = "princess_bride.png" },
+               new { FoodID = "westerno", Name = "Western Omelette", GenreID = "brk", MemberID = "har", LogoImage = "western_omelette.png" },
+               new { FoodID = "frenchd", Name = "French Dip", GenreID = "lun", MemberID = "har", LogoImage = "french_dip.png" },
+               new { FoodID = "gporkc", Name = "Glazed Pork Chops", GenreID = "din", MemberID = "har", LogoImage = "glazed_pork_chops.png" },
+               new { FoodID = "tortc", Name = "Tortilla chips", GenreID = "snk", MemberID = "har", LogoImage = "tortilla_chips.png" },
 
                //Zilong- swap out foodID,Name & the IMG reference for your foods img reference. 
                new { FoodID = "burger", Name = "Zilong breakfast food name here", GenreID = "brk", MemberID = "che", LogoImage = "castle_cagliostro.png" },
@@ -55,8 +55,6 @@ namespace FoodFavorites.Models
                new { FoodID = "nemo", Name = "Bhakti lunch food name here", GenreID = "lun", MemberID = "pok", LogoImage = "finding_nemo.png" }, 
                new { FoodID = "black", Name = "Bhakti dinner food name here", GenreID = "din", MemberID = "pok", LogoImage = "black_panther.png" }, 
                new { FoodID = "blonde", Name = "Bhakti snack food name here", GenreID = "snk", MemberID = "pok", LogoImage = "legally_blonde.png" }
-               
-            
 
            );
         }
