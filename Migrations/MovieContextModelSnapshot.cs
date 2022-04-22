@@ -78,7 +78,7 @@ namespace FoodFavorites.Migrations
                         new
                         {
                             MemberID = "bur",
-                            Bio = "I like cars, watching anime and playing video games",
+                            Bio = "I go by Sri for short as it my name is sometimes hard to pronounce. I graduate around 2 years later with qualifications in Software Dev and Data Tech. I love playing soccer as I have played it professionally and casually as well. Along with all of that, I am an aspiring gamer/streamer and I really hope I can make a side gig out of this interest.",
                             Major = "Information Techology - Data Technologies & Software Development",
                             Name = "Srishant Burdhan",
                             Year = "Sophomore
