@@ -34,7 +34,7 @@ namespace FoodFavorites.Migrations
                 name: "Foods",
                 columns: table => new
                 {
-                    MovieID = table.Column<string>(nullable: false),
+                    FoodID = table.Column<string>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     GenreID = table.Column<string>(nullable: true),
                     MemberID = table.Column<string>(nullable: true),
@@ -42,15 +42,15 @@ namespace FoodFavorites.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Movies", x => x.MovieID);
+                    table.PrimaryKey("PK_Foods", x => x.FoodID);
                     table.ForeignKey(
-                        name: "FK_Movies_Genres_GenreID",
+                        name: "FK_Foods_Genres_GenreID",
                         column: x => x.GenreID,
                         principalTable: "Genres",
                         principalColumn: "GenreID",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Movies_Members_MemberID",
+                        name: "FK_Foods_Members_MemberID",
                         column: x => x.MemberID,
                         principalTable: "Members",
                         principalColumn: "MemberID",
@@ -62,10 +62,10 @@ namespace FoodFavorites.Migrations
                 columns: new[] { "GenreID", "Name" },
                 values: new object[,]
                 {
-                    { "com", "Comedy" },
-                    { "hor", "Horror" },
-                    { "act", "Action" },
-                    { "dra", "Drama" }
+                    { "brk", "Breakfast" },
+                    { "lun", "Lunch" },
+                    { "din", "Dinner" },
+                    { "snk", "Snack" }
                 });
 
             migrationBuilder.InsertData(
@@ -73,11 +73,10 @@ namespace FoodFavorites.Migrations
                 columns: new[] { "MemberID", "Name" },
                 values: new object[,]
                 {
-                    { "bea", "Beasley Chevaux" },
-                    { "bro", "Brown Chistopher" },
-                    { "dan", "Daniel Ibukunoluwa" },
-                    { "har", "Hart Robert" },
-                    { "emi", "Hempker Emily" }
+                    { "bur", "Beasley Chevaux" },
+                    { "che", "Brown Chistopher" },
+                    { "pok", "Daniel Ibukunoluwa" },
+                    { "har", "Hart Robert" }            
                 });
 
             migrationBuilder.InsertData(
@@ -107,14 +106,14 @@ namespace FoodFavorites.Migrations
                     { "blonde", "com", "", null, "Legally Blonde" },
                     { "princess", "dra", "", null, "Princess Bride" }
                 });
-
+                     
             migrationBuilder.CreateIndex(
-                name: "IX_Movies_GenreID",
+                name: "IX_Foods_GenreID",
                 table: "Foods",
                 column: "GenreID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Movies_MemberID",
+                name: "IX_Foods_MemberID",
                 table: "Foods",
                 column: "MemberID");
         }

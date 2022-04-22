@@ -8,7 +8,7 @@ using FoodFavorites.Models;
 namespace FoodFavorites.Migrations
 {
     [DbContext(typeof(FoodContext))]
-    partial class MovieContextModelSnapshot : ModelSnapshot
+    partial class FoodContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
