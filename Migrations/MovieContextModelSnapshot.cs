@@ -109,10 +109,10 @@ namespace FoodFavorites.Migrations
                         },
                         new
                         {
-                            MemberID = "emi",
-                            Bio = "I'm a weeb and a furry.",
+                            MemberID = "pok",
+                            Bio = "I like to watch and play soccer",
                             Major = "Information Techology - Software Development",
-                            Name = "Emily Hempker",
+                            Name = "Bhakti Pokhrel",
                             Year = "Junior"
                         });
                 });

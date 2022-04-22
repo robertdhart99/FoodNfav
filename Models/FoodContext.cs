@@ -25,7 +25,7 @@ namespace FoodFavorites.Models
             modelBuilder.Entity<Member>().HasData(
                 new Member { MemberID = "bur", Name = "Srishant Burdhan", Major = "Information Technology - Data Technologies & Software Development", Year = "Sophomore", Bio = "I go by Sri for short as it my name is sometimes hard to pronounce. I graduate around 2 years later with qualifications in Software Dev and Data Tech. I love playing soccer as I have played it professionally and casually as well. Along with all of that, I am an aspiring gamer/streamer and I really hope I can make a side gig out of this interest." },
                 new Member { MemberID = "che", Name = "Zilong Chen", Major = "Enter Major Here", Year = "Enter year Here", Bio = "Enter BIO HERE" },
-                new Member { MemberID = "pok", Name = "Bhakti Pokhrel",Major = "Enter Major Here", Year = "Enter year Here", Bio = "Enter BIO HERE" },
+                new Member { MemberID = "pok", Name = "Bhakti Pokhrel", Major = "Information Techology - Software Development", Year = "Junior", Bio = "I like to watch and play soccer." },
                 new Member { MemberID = "har", Name = "Robert Hart", Major = "Information Techology - Software Development || Cyber Security", Year = "Senior", Bio = "I prefer to go by Bobby. I will be graduating in august with my IT software dev and cybersecurity degrees. I love to sail and hope to one day Sail around the world." } 
                 
             );
@@ -51,12 +51,10 @@ namespace FoodFavorites.Models
                new { FoodID = "arsenic", Name = "Zilong snack food name here", GenreID = "snk", MemberID = "che", LogoImage = "arsenic_old_lace.png" },
 
                //Bhakti   - swap out foodID,Name & the IMG reference for your foods img reference. 
-               new { FoodID = "cheese", Name = "Bhakti breakfast food name here", GenreID = "brk", MemberID = "pok", LogoImage = "2_fast_2_furious.png" },
-               new { FoodID = "nemo", Name = "Bhakti lunch food name here", GenreID = "lun", MemberID = "pok", LogoImage = "finding_nemo.png" }, 
-               new { FoodID = "black", Name = "Bhakti dinner food name here", GenreID = "din", MemberID = "pok", LogoImage = "black_panther.png" }, 
-               new { FoodID = "blonde", Name = "Bhakti snack food name here", GenreID = "snk", MemberID = "pok", LogoImage = "legally_blonde.png" }
-               
-            
+               new { FoodID = "bec", Name = "Bacon Egg and Cheese", GenreID = "brk", MemberID = "pok", LogoImage = "BEC.png" },
+               new { FoodID = "curry", Name = "Curry", GenreID = "lun", MemberID = "pok", LogoImage = "curry.png" },
+               new { FoodID = "momo", Name = "Momo", GenreID = "din", MemberID = "pok", LogoImage = "momo.png" },
+               new { FoodID = "chatepate", Name = "Chatepate", GenreID = "snk", MemberID = "pok", LogoImage = "chatepate.png" }
 
            );
         }
