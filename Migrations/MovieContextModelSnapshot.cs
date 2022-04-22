@@ -77,11 +77,11 @@ namespace FoodFavorites.Migrations
                     b.HasData(
                         new
                         {
-                            MemberID = "bea",
+                            MemberID = "bur",
                             Bio = "I like cars, watching anime and playing video games",
-                            Major = "Information Techology",
-                            Name = "Chevaux Beasley",
-                            Year = "Senior"
+                            Major = "Information Techology - Data Technologies & Software Development",
+                            Name = "Srishant Burdhan",
+                            Year = "Sophomore
                         },
                         new
                         {
