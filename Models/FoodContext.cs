@@ -23,7 +23,7 @@ namespace FoodFavorites.Models
                 new Genre { GenreID = "snk", Name = "Snack" }
             );                                                                              // enter in the major, Year, Bio 
             modelBuilder.Entity<Member>().HasData(
-                new Member { MemberID = "bur", Name = "Srishant Burdhan", Major = "Enter Major Here", Year = "Enter year Here", Bio = "Enter BIO HERE" },
+                new Member { MemberID = "bur", Name = "Srishant Burdhan", Major = "Information Technology - Data Technologies & Software Development", Year = "Sophomore", Bio = "I go by Sri for short as it my name is sometimes hard to pronounce. I graduate around 2 years later with qualifications in Software Dev and Data Tech. I love playing soccer as I have played it professionally and casually as well. Along with all of that, I am an aspiring gamer/streamer and I really hope I can make a side gig out of this interest." },
                 new Member { MemberID = "che", Name = "Zilong Chen", Major = "Enter Major Here", Year = "Enter year Here", Bio = "Enter BIO HERE" },
                 new Member { MemberID = "pok", Name = "Bhakti Pokhrel",Major = "Enter Major Here", Year = "Enter year Here", Bio = "Enter BIO HERE" },
                 new Member { MemberID = "har", Name = "Robert Hart", Major = "Information Techology - Software Development || Cyber Security", Year = "Senior", Bio = "I prefer to go by Bobby. I will be graduating in august with my IT software dev and cybersecurity degrees. I love to sail and hope to one day Sail around the world." } 
@@ -33,10 +33,10 @@ namespace FoodFavorites.Models
 
 
                //Srishant   - swap out foodID,Name & the IMG reference for your foods img reference. 
-               new { FoodID = "hotdog", Name = "Srishant breakfast food name here", GenreID = "brk", MemberID = "bur", LogoImage = "shrek.png" },
-               new { FoodID = "shrek2", Name = "Srishant lunch food name here", GenreID = "lun", MemberID = "bur", LogoImage = "shrek_2.png" },
-               new { FoodID = "shrek3", Name = "Srishant Dinner food name here", GenreID = "din", MemberID = "bur", LogoImage = "shrek_3.png" },
-               new { FoodID = "shrek4", Name = "Srishant Snack food name here", GenreID = "snk", MemberID = "bur", LogoImage = "shrek_4.png" },
+               new { FoodID = "egg", Name = "Omelette - Sunny-Side-Up", GenreID = "brk", MemberID = "bur", LogoImage = "omel.png" },
+               new { FoodID = "steak", Name = "Well-Done Steak", GenreID = "lun", MemberID = "bur", LogoImage = "steak.png" },
+               new { FoodID = "biryani", Name = "Chicken Biryani", GenreID = "din", MemberID = "bur", LogoImage = "biryani.png" },
+               new { FoodID = "sandwich", Name = "Sandwiches", GenreID = "snk", MemberID = "bur", LogoImage = "sandwich.png" },
 
                //Robert - swap out foodID,Name & the IMG reference for your foods img reference. 
                new { FoodID = "westernOmelette", Name = "Western Omelette", GenreID = "brk", MemberID = "har", LogoImage = "longest_yard.png" },
