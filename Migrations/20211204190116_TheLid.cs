@@ -9,16 +9,16 @@ namespace FoodFavorites.Migrations
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
-                keyValue: "dan",
+                keyValue: "che",
                 column: "Bio",
-                value: "I am groot");
+                value: "che description goes here (TheLid migration) ");
 
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
                 keyValue: "har",
                 column: "Bio",
-                value: "I go by Bobby. I am about to finish my IT software dev and cybersecurity degrees. I love spending time outdoors but also like playing games.");
+                value: "I prefer to go by Bobby. I will be graduating in august with my IT software dev and cybersecurity degrees. I love to sail and hope to one day Sail around the world.");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -26,16 +26,16 @@ namespace FoodFavorites.Migrations
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
-                keyValue: "dan",
+                keyValue: "che",
                 column: "Bio",
-                value: "I am Ibukun Daniel but I also go by I.B.K");
+                value: "I am Zilong chen test LID");
 
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
                 keyValue: "har",
                 column: "Bio",
-                value: "I am Robert Hart but I go by Bobby. I am about to finish my IT software dev and cybersecurity degrees. I love spending time outdoors but also like playing games.");
+                value: "I prefer to go by Bobby. I will be graduating in august with my IT software dev and cybersecurity degrees. I love to sail and hope to one day Sail around the world.");
         }
     }
 }

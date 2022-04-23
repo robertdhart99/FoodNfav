@@ -6,184 +6,156 @@ namespace FoodFavorites.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            //Robert Hart
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "anchor",
+                keyValue: "westerno",
                 column: "MemberID",
                 value: "har");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "arsenic",
+                keyValue: "frenchd",
                 column: "MemberID",
-                value: "bro");
+                value: "har");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "black",
+                keyValue: "gporkc",
                 column: "MemberID",
-                value: "bea");
+                value: "har");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "blonde",
+                keyValue: "tortc",
                 column: "MemberID",
-                value: "bea");
+                value: "har");
 
+            //Srishant
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
                 keyValue: "castle",
                 column: "MemberID",
-                value: "bro");
+                value: "bur");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
                 keyValue: "dodgeball",
                 column: "MemberID",
-                value: "har");
+                value: "bur");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
                 keyValue: "dragon",
                 column: "MemberID",
-                value: "bea");
+                value: "bur");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
                 keyValue: "fail",
                 column: "MemberID",
-                value: "bro");
+                value: "bur");
 
+            //Zilong
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
                 keyValue: "fast",
                 column: "MemberID",
-                value: "bea");
+                value: "che");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
                 keyValue: "long",
                 column: "MemberID",
-                value: "har");
+                value: "che");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
                 keyValue: "nemo",
                 column: "MemberID",
-                value: "bea");
+                value: "che");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
                 keyValue: "October",
                 column: "MemberID",
-                value: "har");
+                value: "che");
 
+            //Bhakti
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
                 keyValue: "pirates",
                 column: "MemberID",
-                value: "har");
+                value: "pok");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
                 keyValue: "princess",
                 column: "MemberID",
-                value: "har");
+                value: "pok");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
                 keyValue: "santa",
                 column: "MemberID",
-                value: "bro");
+                value: "pok");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
                 keyValue: "saving",
                 column: "MemberID",
-                value: "bro");
+                value: "pok");
 
-            migrationBuilder.UpdateData(
-                table: "Foods",
-                keyColumn: "FoodID",
-                keyValue: "shrek",
-                column: "MemberID",
-                value: "emi");
-
-            migrationBuilder.UpdateData(
-                table: "Foods",
-                keyColumn: "FoodID",
-                keyValue: "shrek2",
-                column: "MemberID",
-                value: "emi");
-
-            migrationBuilder.UpdateData(
-                table: "Foods",
-                keyColumn: "FoodID",
-                keyValue: "shrek3",
-                column: "MemberID",
-                value: "emi");
-
-            migrationBuilder.UpdateData(
-                table: "Foods",
-                keyColumn: "FoodID",
-                keyValue: "shrek4",
-                column: "MemberID",
-                value: "emi");
-
-            migrationBuilder.UpdateData(
-                table: "Foods",
-                keyColumn: "FoodID",
-                keyValue: "silent",
-                column: "MemberID",
-                value: "emi");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            //robert 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "anchor",
+                keyValue: "westerno",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "arsenic",
+                keyValue: "frenchd",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "black",
+                keyValue: "gporkc",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "blonde",
+                keyValue: "tortc",
                 column: "MemberID",
                 value: null);
 
+            //Srishant
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
@@ -212,6 +184,7 @@ namespace FoodFavorites.Migrations
                 column: "MemberID",
                 value: null);
 
+            //Zilong
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
@@ -240,6 +213,7 @@ namespace FoodFavorites.Migrations
                 column: "MemberID",
                 value: null);
 
+            //Bhakti
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
@@ -268,40 +242,6 @@ namespace FoodFavorites.Migrations
                 column: "MemberID",
                 value: null);
 
-            migrationBuilder.UpdateData(
-                table: "Foods",
-                keyColumn: "FoodID",
-                keyValue: "shrek",
-                column: "MemberID",
-                value: null);
-
-            migrationBuilder.UpdateData(
-                table: "Foods",
-                keyColumn: "FoodID",
-                keyValue: "shrek2",
-                column: "MemberID",
-                value: null);
-
-            migrationBuilder.UpdateData(
-                table: "Foods",
-                keyColumn: "FoodID",
-                keyValue: "shrek3",
-                column: "MemberID",
-                value: null);
-
-            migrationBuilder.UpdateData(
-                table: "Foods",
-                keyColumn: "FoodID",
-                keyValue: "shrek4",
-                column: "MemberID",
-                value: null);
-
-            migrationBuilder.UpdateData(
-                table: "Foods",
-                keyColumn: "FoodID",
-                keyValue: "silent",
-                column: "MemberID",
-                value: null);
         }
     }
 }

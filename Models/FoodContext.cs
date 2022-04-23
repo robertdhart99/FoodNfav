@@ -42,7 +42,7 @@ namespace FoodFavorites.Models
                new { FoodID = "westerno", Name = "Western Omelette", GenreID = "brk", MemberID = "har", LogoImage = "western_omelette.png" },
                new { FoodID = "frenchd", Name = "French Dip", GenreID = "lun", MemberID = "har", LogoImage = "french_dip.png" },
                new { FoodID = "gporkc", Name = "Glazed Pork Chops", GenreID = "din", MemberID = "har", LogoImage = "glazed_pork_chops.png" },
-               new { FoodID = "tortc", Name = "Tortilla chips", GenreID = "snk", MemberID = "har", LogoImage = "tortilla_chips.png" },
+               new { FoodID = "tortc", Name = "Tortilla Chips", GenreID = "snk", MemberID = "har", LogoImage = "tortilla_chips.png" },
 
                //Zilong- swap out foodID,Name & the IMG reference for your foods img reference. 
                new { FoodID = "burger", Name = "Zilong breakfast food name here", GenreID = "brk", MemberID = "che", LogoImage = "castle_cagliostro.png" },

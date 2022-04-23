@@ -6,30 +6,47 @@ namespace FoodFavorites.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DeleteData(
+            
+            /*migrationBuilder.DeleteData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "anchor");
+                keyValue: "ancor");
 
             migrationBuilder.DeleteData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "dodgeball");
+                keyValue: "dodgeball");*/
+            //robert
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "arsenic",
+                keyValue: "westerno",
                 column: "LogoImage",
-                value: "arsenic_old_lace.png");
+                value: "western_omelette.png");
+
+            migrationBuilder.UpdateData(
+               table: "Foods",
+               keyColumn: "FoodID",
+               keyValue: "frenchd",
+               column: "LogoImage",
+               value: "french_dip.png");
+
+            migrationBuilder.UpdateData(
+               table: "Foods",
+               keyColumn: "FoodID",
+               keyValue: "gporkc",
+               column: "LogoImage",
+               value: "glazed_pork_chops.png");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "black",
+                keyValue: "tortc",
                 column: "LogoImage",
-                value: "black_panther.png");
+                value: "tortilla_chips.png");
 
+            //Srishant
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
@@ -58,6 +75,7 @@ namespace FoodFavorites.Migrations
                 column: "LogoImage",
                 value: "fail_safe_64.png");
 
+            //Zilong
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
@@ -86,6 +104,7 @@ namespace FoodFavorites.Migrations
                 column: "LogoImage",
                 value: "october_sky.png");
 
+            //Bhakti
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
@@ -114,72 +133,40 @@ namespace FoodFavorites.Migrations
                 column: "LogoImage",
                 value: "saving_private_ryan.png");
 
-            migrationBuilder.UpdateData(
-                table: "Foods",
-                keyColumn: "FoodID",
-                keyValue: "shrek",
-                column: "LogoImage",
-                value: "shrek.png");
-
-            migrationBuilder.UpdateData(
-                table: "Foods",
-                keyColumn: "FoodID",
-                keyValue: "shrek2",
-                column: "LogoImage",
-                value: "shrek_2.png");
-
-            migrationBuilder.UpdateData(
-                table: "Foods",
-                keyColumn: "FoodID",
-                keyValue: "shrek3",
-                column: "LogoImage",
-                value: "shrek_3.png");
-
-            migrationBuilder.UpdateData(
-                table: "Foods",
-                keyColumn: "FoodID",
-                keyValue: "shrek4",
-                column: "LogoImage",
-                value: "shrek_4.png");
-
-            migrationBuilder.UpdateData(
-                table: "Foods",
-                keyColumn: "FoodID",
-                keyValue: "silent",
-                column: "LogoImage",
-                value: "silent_hill.png");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            //robert
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "arsenic",
+                keyValue: "westerno",
                 column: "LogoImage",
                 value: "");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "black",
+                keyValue: "frenchd",
                 column: "LogoImage",
                 value: "");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "blonde",
+                keyValue: "gporkc",
                 column: "LogoImage",
                 value: "");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "castle",
+                keyValue: "tortc",
                 column: "LogoImage",
                 value: "");
 
+            //Srishant
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
@@ -208,6 +195,7 @@ namespace FoodFavorites.Migrations
                 column: "LogoImage",
                 value: "");
 
+            //Zilong
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
@@ -236,6 +224,7 @@ namespace FoodFavorites.Migrations
                 column: "LogoImage",
                 value: "");
 
+            //Bhakti
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
@@ -264,35 +253,14 @@ namespace FoodFavorites.Migrations
                 column: "LogoImage",
                 value: "");
 
-            migrationBuilder.UpdateData(
-                table: "Foods",
-                keyColumn: "FoodID",
-                keyValue: "shrek3",
-                column: "LogoImage",
-                value: "");
-
-            migrationBuilder.UpdateData(
-                table: "Foods",
-                keyColumn: "FoodID",
-                keyValue: "shrek4",
-                column: "LogoImage",
-                value: "");
-
-            migrationBuilder.UpdateData(
-                table: "Foods",
-                keyColumn: "FoodID",
-                keyValue: "silent",
-                column: "LogoImage",
-                value: "");
-
-            migrationBuilder.InsertData(
+            /*migrationBuilder.InsertData(
                 table: "Foods",
                 columns: new[] { "FoodID", "GenreID", "LogoImage", "MemberID", "Name" },
                 values: new object[,]
                 {
                     { "dodgeball", "com", "", "har", "Dodgeball" },
                     { "anchor", "com", "", "har", "Anchor Man" }
-                });
+                });*/
         }
     }
 }

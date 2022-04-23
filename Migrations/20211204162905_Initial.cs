@@ -73,9 +73,9 @@ namespace FoodFavorites.Migrations
                 columns: new[] { "MemberID", "Name" },
                 values: new object[,]
                 {
-                    { "bur", "Beasley Chevaux" },
-                    { "che", "Brown Chistopher" },
-                    { "pok", "Daniel Ibukunoluwa" },
+                    { "bur", "Burdhan Srishant" },
+                    { "che", "Chen Zilong" },
+                    { "pok", "Pokhrel Bhakti" },
                     { "har", "Hart Robert" }            
                 });
 
@@ -84,27 +84,26 @@ namespace FoodFavorites.Migrations
                 columns: new[] { "FoodID", "GenreID", "LogoImage", "MemberID", "Name" },
                 values: new object[,]
                 {
+                    //Srishant
                     { "shrek", "com", "", null, "Shrek" },
                     { "dragon", "act", "", null, "Dragon Ball Super" },
                     { "black", "act", "", null, "Black Panther" },
                     { "fast", "act", "", null, "2 Fast 2 Furious" },
+                    //Zilong
                     { "saving", "act", "", null, "Saving Private Ryan" },
                     { "castle", "act", "", null, "Castle Cagliostro" },
                     { "pirates", "act", "", null, "Pirates of the Caribbean" },
                     { "arsenic", "hor", "", null, "Arsenic and Old Lace" },
+                    //Bhakti
                     { "fail", "hor", "", null, "Fail Safe" },
                     { "October", "dra", "", null, "October Sky" },
                     { "silent", "hor", "", null, "Silent Hill" },
                     { "nemo", "com", "", null, "Finding Nemo" },
-                    { "santa", "com", "", null, "The Santa Clause" },
-                    { "dodgeball", "com", "", null, "Dodgeball" },
-                    { "anchor", "com", "", null, "Anchor Man" },
-                    { "long", "com", "", null, "Longest Yard" },
-                    { "shrek4", "com", "", null, "Shrek 4" },
-                    { "shrek3", "com", "", null, "Shrek 3" },
-                    { "shrek2", "com", "", null, "Shrek 2" },
-                    { "blonde", "com", "", null, "Legally Blonde" },
-                    { "princess", "dra", "", null, "Princess Bride" }
+                    //robert
+                    { "westerno", "brk", "western_omelette.png", "har", "Western Omelette" },
+                    { "frenchd", "lun", "french_dip.png", "har", "French Dip" },
+                    { "gporkc", "din", "", null, "Glazed Pork Chops" },
+                    { "tortc", "snk", "", null, "Tortilla Chips" }
                 });
                      
             migrationBuilder.CreateIndex(
