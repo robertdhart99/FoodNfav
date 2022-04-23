@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Movies7
+namespace FoodFavorites
 {
     public class Program
     {

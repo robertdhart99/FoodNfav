@@ -2,12 +2,12 @@
 using System;
 using System.Collections.Generic;
 
-namespace Movies7.Models
+namespace FoodFavorites.Models
 {
-    public class MovieListViewModel : MovieViewModel
+    public class FoodListViewModel : FoodViewModel
     {
         public String UserName { get; set; }
-        public List<Movie> Movies { get; set; }
+        public List<Food> Foods { get; set; }
 
         // use full properties for Conferences and Divisions 
         // so can add 'All' item at beginning

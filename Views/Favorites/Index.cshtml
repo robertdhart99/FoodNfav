@@ -1,7 +1,7 @@
-﻿@model MovieListViewModel
+﻿@model FoodListViewModel
 @{
     ViewData["Title"] = "Favorites";
-    var session = new Movies7Session(Context.Session);   // get session
+    var session = new FoodFavoritesSession(Context.Session);   // get session
 }
 
 <div class="text-center">
@@ -27,18 +27,18 @@
 <div class="row">
     <div class="col-8 offset-2">
         <ul class="list-group">
-            @foreach (Movie movie in Model.Movies)
+            @foreach (Food food in Model.Foods)
             {
                 <li class="list-group-item">
                     <div class="row">
                         <div class="col-sm-4">
-                            <img src="~/images/@movie.LogoImage" alt="" />
+                            <img src="~/images/@food.LogoImage" alt="" />
                         </div>
                         <div class="col-sm-4">
-                            @movie.Name
+                            @food.Name
                         </div>
                         <div class="col-sm-4">
-                            @movie.Genre.Name @movie.Member.Name
+                            @food.Genre.Name @food.Member.Name
                         </div>
                     </div>
                 </li>

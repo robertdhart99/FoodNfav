@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Movies7.Models;
+using FoodFavorites.Models;
 
-namespace Movies7.Migrations
+namespace FoodFavorites.Migrations
 {
-    [DbContext(typeof(MovieContext))]
+    [DbContext(typeof(FoodContext))]
     [Migration("20211204180400_AboutUs")]
     partial class AboutUs
     {
@@ -20,7 +20,7 @@ namespace Movies7.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Movies7.Models.Genre", b =>
+            modelBuilder.Entity("FoodFavorites.Models.Genre", b =>
                 {
                     b.Property<string>("GenreID")
                         .HasColumnType("nvarchar(450)");
@@ -55,7 +55,7 @@ namespace Movies7.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Movies7.Models.Member", b =>
+            modelBuilder.Entity("FoodFavorites.Models.Member", b =>
                 {
                     b.Property<string>("MemberID")
                         .HasColumnType("nvarchar(450)");
@@ -119,9 +119,9 @@ namespace Movies7.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Movies7.Models.Movie", b =>
+            modelBuilder.Entity("FoodFavorites.Models.Food", b =>
                 {
-                    b.Property<string>("MovieID")
+                    b.Property<string>("FoodID")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("GenreID")
@@ -136,13 +136,13 @@ namespace Movies7.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("MovieID");
+                    b.HasKey("FoodID");
 
                     b.HasIndex("GenreID");
 
                     b.HasIndex("MemberID");
 
-                    b.ToTable("Movies");
+                    b.ToTable("Foods");
 
                     b.HasData(
                         new
@@ -339,13 +339,13 @@ namespace Movies7.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Movies7.Models.Movie", b =>
+            modelBuilder.Entity("FoodFavorites.Models.Food", b =>
                 {
-                    b.HasOne("Movies7.Models.Genre", "Genre")
+                    b.HasOne("FoodFavorites.Models.Genre", "Genre")
                         .WithMany()
                         .HasForeignKey("GenreID");
 
-                    b.HasOne("Movies7.Models.Member", "Member")
+                    b.HasOne("FoodFavorites.Models.Member", "Member")
                         .WithMany()
                         .HasForeignKey("MemberID");
                 });

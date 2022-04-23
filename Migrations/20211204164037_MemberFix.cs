@@ -1,307 +1,247 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Movies7.Migrations
+namespace FoodFavorites.Migrations
 {
     public partial class MemberFix : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            //Robert Hart
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
-                keyValue: "anchor",
+                table: "Foods",
+                keyColumn: "FoodID",
+                keyValue: "westerno",
                 column: "MemberID",
                 value: "har");
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
-                keyValue: "arsenic",
+                table: "Foods",
+                keyColumn: "FoodID",
+                keyValue: "frenchd",
                 column: "MemberID",
-                value: "bro");
+                value: "har");
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
-                keyValue: "black",
+                table: "Foods",
+                keyColumn: "FoodID",
+                keyValue: "gporkc",
                 column: "MemberID",
-                value: "bea");
+                value: "har");
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
-                keyValue: "blonde",
+                table: "Foods",
+                keyColumn: "FoodID",
+                keyValue: "tortc",
                 column: "MemberID",
-                value: "bea");
+                value: "har");
 
+            //Srishant
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "castle",
                 column: "MemberID",
-                value: "bro");
+                value: "bur");
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "dodgeball",
                 column: "MemberID",
-                value: "har");
+                value: "bur");
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "dragon",
                 column: "MemberID",
-                value: "bea");
+                value: "bur");
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "fail",
                 column: "MemberID",
-                value: "bro");
+                value: "bur");
 
+            //Zilong
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "fast",
                 column: "MemberID",
-                value: "bea");
+                value: "che");
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "long",
                 column: "MemberID",
-                value: "har");
+                value: "che");
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "nemo",
                 column: "MemberID",
-                value: "bea");
+                value: "che");
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "October",
                 column: "MemberID",
-                value: "har");
+                value: "che");
 
+            //Bhakti
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "pirates",
                 column: "MemberID",
-                value: "har");
+                value: "pok");
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "princess",
                 column: "MemberID",
-                value: "har");
+                value: "pok");
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "santa",
                 column: "MemberID",
-                value: "bro");
+                value: "pok");
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "saving",
                 column: "MemberID",
-                value: "bro");
+                value: "pok");
 
-            migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
-                keyValue: "shrek",
-                column: "MemberID",
-                value: "emi");
-
-            migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
-                keyValue: "shrek2",
-                column: "MemberID",
-                value: "emi");
-
-            migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
-                keyValue: "shrek3",
-                column: "MemberID",
-                value: "emi");
-
-            migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
-                keyValue: "shrek4",
-                column: "MemberID",
-                value: "emi");
-
-            migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
-                keyValue: "silent",
-                column: "MemberID",
-                value: "emi");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            //robert 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
-                keyValue: "anchor",
+                table: "Foods",
+                keyColumn: "FoodID",
+                keyValue: "westerno",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
-                keyValue: "arsenic",
+                table: "Foods",
+                keyColumn: "FoodID",
+                keyValue: "frenchd",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
-                keyValue: "black",
+                table: "Foods",
+                keyColumn: "FoodID",
+                keyValue: "gporkc",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
-                keyValue: "blonde",
+                table: "Foods",
+                keyColumn: "FoodID",
+                keyValue: "tortc",
                 column: "MemberID",
                 value: null);
 
+            //Srishant
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "castle",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "dodgeball",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "dragon",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "fail",
                 column: "MemberID",
                 value: null);
 
+            //Zilong
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "fast",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "long",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "nemo",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "October",
                 column: "MemberID",
                 value: null);
 
+            //Bhakti
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "pirates",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "princess",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "santa",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
+                table: "Foods",
+                keyColumn: "FoodID",
                 keyValue: "saving",
                 column: "MemberID",
                 value: null);
 
-            migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
-                keyValue: "shrek",
-                column: "MemberID",
-                value: null);
-
-            migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
-                keyValue: "shrek2",
-                column: "MemberID",
-                value: null);
-
-            migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
-                keyValue: "shrek3",
-                column: "MemberID",
-                value: null);
-
-            migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
-                keyValue: "shrek4",
-                column: "MemberID",
-                value: null);
-
-            migrationBuilder.UpdateData(
-                table: "Movies",
-                keyColumn: "MovieID",
-                keyValue: "silent",
-                column: "MemberID",
-                value: null);
         }
     }
 }

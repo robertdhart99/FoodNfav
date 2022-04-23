@@ -2,9 +2,9 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using Movies7.Models;
+using FoodFavorites.Models;
 
-namespace Movies7
+namespace FoodFavorites
 {
     public class Startup
     {
@@ -25,8 +25,8 @@ namespace Movies7
 
             services.AddControllersWithViews().AddNewtonsoftJson();
 
-            services.AddDbContext<MovieContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("MovieContext")));
+            services.AddDbContext<FoodContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("FoodContext")));
         }
 
         // Use this method to configure the HTTP request pipeline.

@@ -2,17 +2,15 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using FoodFavorites.Models;
 
 namespace FoodFavorites.Migrations
 {
     [DbContext(typeof(FoodContext))]
-    [Migration("20211204162905_Initial")]
-    partial class Initial
+    partial class FoodContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -60,34 +58,56 @@ namespace FoodFavorites.Migrations
                     b.Property<string>("MemberID")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("Bio")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Major")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Year")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("MemberID");
 
                     b.ToTable("Members");
 
-                    b.HasData(
-                        new
-                        {
-                            MemberID = "bur",
-                            Name = "Burdhan Srishant"
-                        },
-                        new
-                        {
-                            MemberID = "che",
-                            Name = "Chen Zilong "
-                        },
-                        new
-                        {
-                            MemberID = "pok",
-                            Name = "Pokhrel Bhakti"
-                        },
-                        new
-                        {
-                            MemberID = "har",
-                            Name = "Hart Robert"        
-                        });
+                b.HasData(
+                    new
+                    {
+                        MemberID = "bur",
+                        Bio = "",
+                        Major = "",
+                        Name = "Srishant Burdhan",
+                        Year = ""
+                    },
+                    new
+                    {
+                        MemberID = "che",
+                        Bio = "",
+                        Major = "",
+                        Name = "Zilong Chen",
+                        Year = ""
+                    },
+                    new
+                    {
+                        MemberID = "pok",
+                        Bio = "",
+                        Major = "",
+                        Name = "Bhakti Pokhrel",
+                        Year = ""
+                    },
+                    new
+                    {
+                        MemberID = "har",
+                        Bio = "I prefer to go by Bobby. I will be graduating in august with my IT software dev and cybersecurity degrees. I love to sail and hope to one day Sail around the world.",
+                        Major = "Information Techology - Software Development || Cyber Security",
+                        Name = "Robert Hart",
+                        Year = "Senior"
+                    });     
+                       
                 });
 
             modelBuilder.Entity("FoodFavorites.Models.Food", b =>
@@ -115,7 +135,7 @@ namespace FoodFavorites.Migrations
 
                     b.ToTable("Foods");
 
-                    b.HasData(
+                b.HasData(
                     new
                     {
                         //Srishant
@@ -152,7 +172,7 @@ namespace FoodFavorites.Migrations
                         MemberID = "emi",
                         Name = "Shrek 4"
                     },
-
+ 
                     new
                     {
                         //Robert Hart
@@ -261,7 +281,7 @@ namespace FoodFavorites.Migrations
                         MemberID = "bea",
                         Name = "Black Panther"
                     });
-
+                        
                 });
 
             modelBuilder.Entity("FoodFavorites.Models.Food", b =>

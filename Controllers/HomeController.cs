@@ -4,40 +4,40 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Movies7.Models;
+using FoodFavorites.Models;
 
-namespace Movies7.Controllers
+namespace FoodFavorites.Controllers
 {
     public class HomeController : Controller
     {
-        private MovieContext context;
+        private FoodContext context;
 
-        public HomeController(MovieContext ctx)
+        public HomeController(FoodContext ctx)
         {
             context = ctx;
         }
 
         public IActionResult Index(string activeGenre = "all", string activeMember = "all")
         {
-            var session = new Movies7Session(HttpContext.Session);
+            var session = new FoodFavoritesSession(HttpContext.Session);
             session.SetActiveGenre(activeGenre);
             session.SetActiveMember(activeMember);
 
             // if no count value in session, use data in cookie to restore fave teams in session 
-            int? count = session.GetMyMovieCount();
+            int? count = session.GetMyFoodCount();
             if (count == null) {
-                var cookies = new Movies7Cookies(HttpContext.Request.Cookies);
-                string[] ids = cookies.GetMyMovieIds();
+                var cookies = new FoodFavoritesCookies(HttpContext.Request.Cookies);
+                string[] ids = cookies.GetMyFoodsIds();
 
-                List<Movie> mymovies = new List<Movie>(); 
+                List<Food> myfoods = new List<Food>(); 
                 if (ids.Length > 0)
-                    mymovies = context.Movies.Include(t => t.Genre)
+                    myfoods = context.Foods.Include(t => t.Genre)
                         .Include(t => t.Member)
-                        .Where(t => ids.Contains(t.MovieID)).ToList();
-                session.SetMyMovies(mymovies);
+                        .Where(t => ids.Contains(t.FoodID)).ToList();
+                session.SetMyFoods(myfoods);
             }
 
-            var model = new MovieListViewModel
+            var model = new FoodListViewModel
             {
                 ActiveGenre = activeGenre,
                 ActiveMember = activeMember,
@@ -45,27 +45,27 @@ namespace Movies7.Controllers
                 Members = context.Members.ToList()
             };
 
-            IQueryable<Movie> query = context.Movies;
+            IQueryable<Food> query = context.Foods;
             if (activeGenre != "all")
                 query = query.Where(
                     t => t.Genre.GenreID.ToLower() == activeGenre.ToLower());
             if (activeMember != "all")
                 query = query.Where(
                     t => t.Member.MemberID.ToLower() == activeMember.ToLower());
-            model.Movies = query.ToList();
+            model.Foods= query.ToList();
 
             return View(model);
         }
 
         public IActionResult Details(string id)
         {
-            var session = new Movies7Session(HttpContext.Session);
-            var model = new MovieViewModel
+            var session = new FoodFavoritesSession(HttpContext.Session);
+            var model = new FoodViewModel
             {
-                Movie = context.Movies
+                Food = context.Foods
                     .Include(t => t.Genre)
                     .Include(t => t.Member)
-                    .FirstOrDefault(t => t.MovieID == id),
+                    .FirstOrDefault(t => t.FoodID == id),
                 ActiveMember = session.GetActiveMember(),
                 ActiveGenre = session.GetActiveGenre()
             };
@@ -73,23 +73,23 @@ namespace Movies7.Controllers
         }
 
         [HttpPost]
-        public RedirectToActionResult Add(MovieViewModel model)
+        public RedirectToActionResult Add(FoodViewModel model)
         {
-            model.Movie = context.Movies
+            model.Food = context.Foods
                 .Include(t => t.Genre)
                 .Include(t => t.Member)
-                .Where(t => t.MovieID == model.Movie.MovieID)
+                .Where(t => t.FoodID == model.Food.FoodID)
                 .FirstOrDefault();
 
-            var session = new Movies7Session(HttpContext.Session);
-            var movies = session.GetMyMovies();
-            movies.Add(model.Movie);
-            session.SetMyMovies(movies);
+            var session = new FoodFavoritesSession(HttpContext.Session);
+            var foods = session.GetMyFoods();
+            foods.Add(model.Food);
+            session.SetMyFoods(foods);
 
-            var cookies = new Movies7Cookies(HttpContext.Response.Cookies);
-            cookies.SetMyMoviesIds(movies);
+            var cookies = new FoodFavoritesCookies(HttpContext.Response.Cookies);
+            cookies.SetMyFoodsIds(foods);
 
-            TempData["message"] = $"{model.Movie.Name} added to your favorites";
+            TempData["message"] = $"{model.Food.Name} added to your favorites";
 
             return RedirectToAction("Index",
                 new {

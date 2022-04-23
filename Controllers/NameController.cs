@@ -1,20 +1,20 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
-using Movies7.Models;
+using FoodFavorites.Models;
 
-namespace Movies7.Controllers
+namespace FoodFavorites.Controllers
 {
     public class NameController : Controller
     {
         [HttpGet]
         public ViewResult Index()
         {
-            var session = new Movies7Session(HttpContext.Session);
-            var model = new MovieListViewModel
+            var session = new FoodFavoritesSession(HttpContext.Session);
+            var model = new FoodListViewModel
             {
                 ActiveGenre = session.GetActiveGenre(),
                 ActiveMember = session.GetActiveMember(),
-                Movies = session.GetMyMovies(),
+                Foods = session.GetMyFoods(),
                 UserName = session.GetName()
             };
 
@@ -22,9 +22,9 @@ namespace Movies7.Controllers
         }
 
         [HttpPost]
-        public RedirectToActionResult Change(MovieListViewModel model)
+        public RedirectToActionResult Change(FoodListViewModel model)
         {
-            var session = new Movies7Session(HttpContext.Session);            
+            var session = new FoodFavoritesSession(HttpContext.Session);            
             session.SetName(model.UserName);           
             return RedirectToAction("Index", "Home", new {
                     ActiveGenre = session.GetActiveGenre(),
