@@ -155,11 +155,11 @@ namespace FoodFavorites.Migrations
                         },
                         new
                         {
-                            MovieID = "silent",
+                            MovieID = "frenchd",
                             GenreID = "hor",
-                            LogoImage = "silent_hill.png",
-                            MemberID = "emi",
-                            Name = "Silent Hill"
+                            LogoImage = "french_dip.png",
+                            MemberID = "har",
+                            Name = "French Dip"
                         },
                         new
                         {
