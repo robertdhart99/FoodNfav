@@ -23,7 +23,7 @@ namespace FoodFavorites.Models
                 new Genre { GenreID = "snk", Name = "Snack" }
             );                                                                              // enter in the major, Year, Bio 
             modelBuilder.Entity<Member>().HasData(
-                new Member { MemberID = "bur", Name = "Srishant Burdhan", Major = "Enter Major Here", Year = "Enter year Here", Bio = "Enter BIO HERE" },
+                new Member { MemberID = "bur", Name = "Srishant Burdhan", Major = "Information Technology - Data Technologies & Software Development", Year = "Sophomore", Bio = "I go by Sri for short as my name is sometimes hard to pronounce. I graduate around 2 years later with qualifications in Software Dev and Data Tech. I love playing soccer as I have played it professionally and casually as well. Along with all of that, I am an aspiring gamer/streamer and I really hope I can make a side gig out of this interest." },
                 new Member { MemberID = "che", Name = "Zilong Chen", Major = "Information Techology - Software Development", Year = "Junior", Bio = "Why don't you listen to dubstep?" },
                 new Member { MemberID = "pok", Name = "Bhakti Pokhrel",Major = "Enter Major Here", Year = "Enter year Here", Bio = "Enter BIO HERE" },
                 new Member { MemberID = "har", Name = "Robert Hart", Major = "Information Techology - Software Development || Cyber Security", Year = "Senior", Bio = "I prefer to go by Bobby. I will be graduating in august with my IT software dev and cybersecurity degrees. I love to sail and hope to one day Sail around the world." } 
