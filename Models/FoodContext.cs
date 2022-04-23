@@ -24,7 +24,7 @@ namespace FoodFavorites.Models
             );                                                                              // enter in the major, Year, Bio 
             modelBuilder.Entity<Member>().HasData(
                 new Member { MemberID = "bur", Name = "Srishant Burdhan", Major = "Enter Major Here", Year = "Enter year Here", Bio = "Enter BIO HERE" },
-                new Member { MemberID = "che", Name = "Zilong Chen", Major = "Enter Major Here", Year = "Enter year Here", Bio = "Enter BIO HERE" },
+                new Member { MemberID = "che", Name = "Zilong Chen", Major = "Information Techology - Software Development", Year = "Junior", Bio = "Why don't you listen to dubstep?" },
                 new Member { MemberID = "pok", Name = "Bhakti Pokhrel",Major = "Enter Major Here", Year = "Enter year Here", Bio = "Enter BIO HERE" },
                 new Member { MemberID = "har", Name = "Robert Hart", Major = "Information Techology - Software Development || Cyber Security", Year = "Senior", Bio = "I prefer to go by Bobby. I will be graduating in august with my IT software dev and cybersecurity degrees. I love to sail and hope to one day Sail around the world." } 
                 
@@ -45,10 +45,10 @@ namespace FoodFavorites.Models
                new { FoodID = "tortc", Name = "Tortilla Chips", GenreID = "snk", MemberID = "har", LogoImage = "tortilla_chips.png" },
 
                //Zilong- swap out foodID,Name & the IMG reference for your foods img reference. 
-               new { FoodID = "burger", Name = "Zilong breakfast food name here", GenreID = "brk", MemberID = "che", LogoImage = "castle_cagliostro.png" },
-               new { FoodID = "fail", Name = "Zilong lunch food name here", GenreID = "lun", MemberID = "che", LogoImage = "fail_safe_64.png" },
-               new { FoodID = "saving", Name = "Zilong Dinner food name here", GenreID = "din", MemberID = "che", LogoImage = "saving_private_ryan.png" },
-               new { FoodID = "arsenic", Name = "Zilong snack food name here", GenreID = "snk", MemberID = "che", LogoImage = "arsenic_old_lace.png" },
+               new { FoodID = "bun", Name = "steamed stuffed bun", GenreID = "brk", MemberID = "che", LogoImage = "steamed_stuffed_bun.png" },
+               new { FoodID = "yam", Name = "Fried carrot with yam", GenreID = "lun", MemberID = "che", LogoImage = "Fried_carrot_with_yam.png" },
+               new { FoodID = "carp", Name = "sweat and sour carp", GenreID = "din", MemberID = "che", LogoImage = "sweat_and_sour_carp.png" },
+               new { FoodID = "cookie", Name = "cookie", GenreID = "snk", MemberID = "che", LogoImage = "cookie.png" },
 
                //Bhakti   - swap out foodID,Name & the IMG reference for your foods img reference. 
                new { FoodID = "cheese", Name = "Bhakti breakfast food name here", GenreID = "brk", MemberID = "pok", LogoImage = "2_fast_2_furious.png" },
