@@ -33,10 +33,10 @@ namespace FoodFavorites.Models
 
 
                //Srishant   - swap out foodID,Name & the IMG reference for your foods img reference. 
-               new { FoodID = "hotdog", Name = "Srishant breakfast food name here", GenreID = "brk", MemberID = "bur", LogoImage = "shrek.png" },
-               new { FoodID = "shrek2", Name = "Srishant lunch food name here", GenreID = "lun", MemberID = "bur", LogoImage = "shrek_2.png" },
-               new { FoodID = "shrek3", Name = "Srishant Dinner food name here", GenreID = "din", MemberID = "bur", LogoImage = "shrek_3.png" },
-               new { FoodID = "shrek4", Name = "Srishant Snack food name here", GenreID = "snk", MemberID = "bur", LogoImage = "shrek_4.png" },
+               new { FoodID = "egg", Name = "Omelette - Sunny-Side-Up", GenreID = "brk", MemberID = "bur", LogoImage = "omel.png" },
+               new { FoodID = "steak", Name = "Well-Done Steak", GenreID = "lun", MemberID = "bur", LogoImage = "steak.png" },
+               new { FoodID = "biryani", Name = "Chicken Biryani", GenreID = "din", MemberID = "bur", LogoImage = "biryani.png" },
+               new { FoodID = "sandwich", Name = "Sandwiches", GenreID = "snk", MemberID = "bur", LogoImage = "sandwich.png" },
 
                //Robert - swap out foodID,Name & the IMG reference for your foods img reference. 
                new { FoodID = "westerno", Name = "Western Omelette", GenreID = "brk", MemberID = "har", LogoImage = "western_omelette.png" },
