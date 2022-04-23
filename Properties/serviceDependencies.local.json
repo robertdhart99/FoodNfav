@@ -1,10 +1,12 @@
 {
   "dependencies": {
     "secrets1": {
-      "resourceId": null,
-      "type": "secrets.user",
-      "connectionId": null,
-      "secretStore": null
+      "type": "secrets.user"
+    },
+    "mssql1": {
+      "type": "mssql.local",
+      "connectionId": "FoodContext",
+      "secretStore": "LocalSecretsFile"
     }
   }
 }

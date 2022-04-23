@@ -44,13 +44,13 @@ namespace FoodFavorites.Migrations
                 {
                     table.PrimaryKey("PK_Foods", x => x.FoodID);
                     table.ForeignKey(
-                        name: "FK_Foods_Genres_GenreID",
+                        name: "FK_FoodDataBase_Genres_GenreID",
                         column: x => x.GenreID,
                         principalTable: "Genres",
                         principalColumn: "GenreID",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Foods_Members_MemberID",
+                        name: "FK_FoodDataBase_Members_MemberID",
                         column: x => x.MemberID,
                         principalTable: "Members",
                         principalColumn: "MemberID",
@@ -100,8 +100,8 @@ namespace FoodFavorites.Migrations
                     { "silent", "hor", "", null, "Silent Hill" },
                     { "nemo", "com", "", null, "Finding Nemo" },
                     //robert
-                    { "westerno", "brk", "western_omelette.png", "har", "Western Omelette" },
-                    { "frenchd", "lun", "french_dip.png", "har", "French Dip" },
+                    { "westerno", "brk", "", null, "Western Omelette" },
+                    { "frenchd", "lun", "", null, "French Dip" },
                     { "gporkc", "din", "", null, "Glazed Pork Chops" },
                     { "tortc", "snk", "", null, "Tortilla Chips" }
                 });

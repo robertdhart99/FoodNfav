@@ -110,7 +110,7 @@ namespace FoodFavorites.Migrations
                        
                 });
 
-            modelBuilder.Entity("FoodFavorites.Models.Food", b =>
+            modelBuilder.Entity("FoodFavorites.Models.Foods", b =>
                 {
                     b.Property<string>("FoodID")
                         .HasColumnType("nvarchar(450)");
@@ -284,7 +284,7 @@ namespace FoodFavorites.Migrations
                         
                 });
 
-            modelBuilder.Entity("FoodFavorites.Models.Food", b =>
+            modelBuilder.Entity("FoodFavorites.Models.Foods", b =>
                 {
                     b.HasOne("FoodFavorites.Models.Genre", "Genre")
                         .WithMany()

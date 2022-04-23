@@ -7,7 +7,7 @@ namespace FoodFavorites.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             
-            /*migrationBuilder.DeleteData(
+            migrationBuilder.DeleteData(
                 table: "Foods",
                 keyColumn: "FoodID",
                 keyValue: "ancor");
@@ -15,7 +15,7 @@ namespace FoodFavorites.Migrations
             migrationBuilder.DeleteData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "dodgeball");*/
+                keyValue: "dodgeball");
             //robert
 
             migrationBuilder.UpdateData(

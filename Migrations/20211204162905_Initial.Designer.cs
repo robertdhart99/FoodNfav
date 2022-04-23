@@ -90,7 +90,7 @@ namespace FoodFavorites.Migrations
                         });
                 });
 
-            modelBuilder.Entity("FoodFavorites.Models.Food", b =>
+            modelBuilder.Entity("FoodFavorites.Models.Foods", b =>
                 {
                     b.Property<string>("FoodID")
                         .HasColumnType("nvarchar(450)");
@@ -120,7 +120,7 @@ namespace FoodFavorites.Migrations
                     {
                         //Srishant
                         FoodID = "shrek",
-                        GenreID = "com",
+                        GenreID = "brk",
                         LogoImage = "shrek.png",
                         MemberID = "bur",
                         Name = "Shrek"
@@ -129,27 +129,27 @@ namespace FoodFavorites.Migrations
                     {
                         //Srishant
                         FoodID = "shrek2",
-                        GenreID = "com",
+                        GenreID = "lun",
                         LogoImage = "shrek_2.png",
-                        MemberID = "emi",
+                        MemberID = "bur",
                         Name = "Shrek 2"
                     },
                     new
                     {
                         //Srishant
                         FoodID = "shrek3",
-                        GenreID = "com",
+                        GenreID = "din",
                         LogoImage = "shrek_3.png",
-                        MemberID = "emi",
+                        MemberID = "bur",
                         Name = "Shrek 3"
                     },
                     new
                     {
                         //Srishant
                         FoodID = "shrek4",
-                        GenreID = "com",
+                        GenreID = "snk",
                         LogoImage = "shrek_4.png",
-                        MemberID = "emi",
+                        MemberID = "bur",
                         Name = "Shrek 4"
                     },
 
@@ -193,78 +193,78 @@ namespace FoodFavorites.Migrations
                     {
                         //Zilong
                         FoodID = "castle",
-                        GenreID = "act",
+                        GenreID = "brk",
                         LogoImage = "castle_cagliostro.png",
-                        MemberID = "bro",
+                        MemberID = "che",
                         Name = "Castle Cagliostro"
                     },
                     new
                     {
                         //Zilong
                         FoodID = "fail",
-                        GenreID = "hor",
+                        GenreID = "lun",
                         LogoImage = "fail_safe_64.png",
-                        MemberID = "bro",
+                        MemberID = "che",
                         Name = "Fail Safe"
                     },
                     new
                     {
                         //Zilong
                         FoodIDD = "saving",
-                        GenreID = "act",
+                        GenreID = "din",
                         LogoImage = "saving_private_ryan.png",
-                        MemberID = "bro",
+                        MemberID = "che",
                         Name = "Saving Private Ryan"
                     },
                     new
                     {
                         //Zilong
                         FoodID = "arsenic",
-                        GenreID = "hor",
+                        GenreID = "snk",
                         LogoImage = "arsenic_old_lace.png",
-                        MemberID = "bro",
+                        MemberID = "che",
                         Name = "Arsenic and Old Lace"
                     },
                     new
                     {
                         //Bhakti
                         FoodID = "santa",
-                        GenreID = "com",
+                        GenreID = "brk",
                         LogoImage = "santa_clause.png",
-                        MemberID = "bro",
+                        MemberID = "pok",
                         Name = "The Santa Clause"
                     },
                     new
                     {
                         //Bhakti
                         FoodID = "fast",
-                        GenreID = "act",
+                        GenreID = "lun",
                         LogoImage = "2_fast_2_furious.png",
-                        MemberID = "bea",
+                        MemberID = "pok",
                         Name = "2 Fast 2 Furious"
                     },
                     new
                     {
                         //Bhakti
                         FoodID = "nemo",
-                        GenreID = "com",
+                        GenreID = "din",
                         LogoImage = "finding_nemo.png",
-                        MemberID = "bea",
+                        MemberID = "pok",
                         Name = "Finding Nemo"
                     },
                     new
                     {
                         //Bhakti
                         FoodID = "black",
-                        GenreID = "act",
+                        GenreID = "snk",
                         LogoImage = "black_panther.png",
-                        MemberID = "bea",
+                        MemberID = "pok",
                         Name = "Black Panther"
                     });
 
                 });
 
-            modelBuilder.Entity("FoodFavorites.Models.Food", b =>
+            modelBuilder.Entity("FoodFavorites.Models.Foods", b =>
                 {
                     b.HasOne("FoodFavorites.Models.Genre", "Genre")
                         .WithMany()

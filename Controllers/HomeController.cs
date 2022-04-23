@@ -52,7 +52,7 @@ namespace FoodFavorites.Controllers
             if (activeMember != "all")
                 query = query.Where(
                     t => t.Member.MemberID.ToLower() == activeMember.ToLower());
-            model.Foods= query.ToList();
+            model.Foods = query.ToList();
 
             return View(model);
         }
