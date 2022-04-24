@@ -39,28 +39,28 @@ namespace FoodFavorites.Migrations
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "castle",
+                keyValue: "omel",
                 column: "MemberID",
                 value: "bur");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "dodgeball",
+                keyValue: "stek",
                 column: "MemberID",
                 value: "bur");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "dragon",
+                keyValue: "biry",
                 column: "MemberID",
                 value: "bur");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "fail",
+                keyValue: "biryani",
                 column: "MemberID",
                 value: "bur");
 
@@ -68,28 +68,28 @@ namespace FoodFavorites.Migrations
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "fast",
+                keyValue: "steamb",
                 column: "MemberID",
                 value: "che");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "long",
+                keyValue: "fcarroty",
                 column: "MemberID",
                 value: "che");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "nemo",
+                keyValue: "sweetnscarp",
                 column: "MemberID",
                 value: "che");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "October",
+                keyValue: "cooki",
                 column: "MemberID",
                 value: "che");
 
@@ -97,28 +97,28 @@ namespace FoodFavorites.Migrations
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "pirates",
+                keyValue: "bec",
                 column: "MemberID",
                 value: "pok");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "princess",
+                keyValue: "curry",
                 column: "MemberID",
                 value: "pok");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "santa",
+                keyValue: "momo",
                 column: "MemberID",
                 value: "pok");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "saving",
+                keyValue: "chatepate",
                 column: "MemberID",
                 value: "pok");
 
@@ -159,28 +159,28 @@ namespace FoodFavorites.Migrations
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "castle",
+                keyValue: "omel",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "dodgeball",
+                keyValue: "stek",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "dragon",
+                keyValue: "biry",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "fail",
+                keyValue: "sandwich",
                 column: "MemberID",
                 value: null);
 
@@ -188,28 +188,28 @@ namespace FoodFavorites.Migrations
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "fast",
+                keyValue: "steamb",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "long",
+                keyValue: "fcarroty",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "nemo",
+                keyValue: "sweetnscarp",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "October",
+                keyValue: "cooki",
                 column: "MemberID",
                 value: null);
 
@@ -217,28 +217,28 @@ namespace FoodFavorites.Migrations
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "pirates",
+                keyValue: "bec",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "princess",
+                keyValue: "curry",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "santa",
+                keyValue: "momo",
                 column: "MemberID",
                 value: null);
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "saving",
+                keyValue: "chatepate",
                 column: "MemberID",
                 value: null);
 

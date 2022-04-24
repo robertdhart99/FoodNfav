@@ -119,38 +119,38 @@ namespace FoodFavorites.Migrations
                     new
                     {
                         //Srishant
-                        FoodID = "shrek",
+                        FoodID = "omel",
                         GenreID = "brk",
-                        LogoImage = "shrek.png",
+                        LogoImage = "omel.png",
                         MemberID = "bur",
-                        Name = "Shrek"
+                        Name = "Omelette"
                     },
                     new
                     {
                         //Srishant
-                        FoodID = "shrek2",
+                        FoodID = "stek",
                         GenreID = "lun",
-                        LogoImage = "shrek_2.png",
+                        LogoImage = "steak.png",
                         MemberID = "bur",
-                        Name = "Shrek 2"
+                        Name = "Steak"
                     },
                     new
                     {
                         //Srishant
-                        FoodID = "shrek3",
+                        FoodID = "biry",
                         GenreID = "din",
-                        LogoImage = "shrek_3.png",
+                        LogoImage = "biryani.png",
                         MemberID = "bur",
-                        Name = "Shrek 3"
+                        Name = "Biryani"
                     },
                     new
                     {
                         //Srishant
-                        FoodID = "shrek4",
+                        FoodID = "sandwich",
                         GenreID = "snk",
-                        LogoImage = "shrek_4.png",
+                        LogoImage = "sandwich.png",
                         MemberID = "bur",
-                        Name = "Shrek 4"
+                        Name = "Sandwich"
                     },
 
                     new
@@ -192,74 +192,74 @@ namespace FoodFavorites.Migrations
                     new
                     {
                         //Zilong
-                        FoodID = "castle",
+                        FoodID = "steamb",
                         GenreID = "brk",
-                        LogoImage = "castle_cagliostro.png",
+                        LogoImage = "steamed_bun.png",
                         MemberID = "che",
-                        Name = "Castle Cagliostro"
+                        Name = "Steamed Bun"
                     },
                     new
                     {
                         //Zilong
-                        FoodID = "fail",
+                        FoodID = "fcarroty",
                         GenreID = "lun",
-                        LogoImage = "fail_safe_64.png",
+                        LogoImage = "fried_carrot_with_yam.png",
                         MemberID = "che",
-                        Name = "Fail Safe"
+                        Name = "Fried Carrot with Yam"
                     },
                     new
                     {
                         //Zilong
-                        FoodIDD = "saving",
+                        FoodIDD = "sweetnscarp",
                         GenreID = "din",
-                        LogoImage = "saving_private_ryan.png",
+                        LogoImage = "sweet_and_sour_carp.png",
                         MemberID = "che",
-                        Name = "Saving Private Ryan"
+                        Name = "Sweet and Sour Carp"
                     },
                     new
                     {
                         //Zilong
-                        FoodID = "arsenic",
+                        FoodID = "cooki",
                         GenreID = "snk",
-                        LogoImage = "arsenic_old_lace.png",
+                        LogoImage = "cookie.png",
                         MemberID = "che",
-                        Name = "Arsenic and Old Lace"
+                        Name = "Cookie"
                     },
                     new
                     {
                         //Bhakti
-                        FoodID = "santa",
+                        FoodID = "bec",
                         GenreID = "brk",
-                        LogoImage = "santa_clause.png",
+                        LogoImage = "egg_sandwich.png",
                         MemberID = "pok",
-                        Name = "The Santa Clause"
+                        Name = "Bacon Egg and Cheese sandwich"
                     },
                     new
                     {
                         //Bhakti
-                        FoodID = "fast",
+                        FoodID = "curry",
                         GenreID = "lun",
-                        LogoImage = "2_fast_2_furious.png",
+                        LogoImage = "curry.png",
                         MemberID = "pok",
-                        Name = "2 Fast 2 Furious"
+                        Name = "Curry"
                     },
                     new
                     {
                         //Bhakti
-                        FoodID = "nemo",
+                        FoodID = "momo",
                         GenreID = "din",
-                        LogoImage = "finding_nemo.png",
+                        LogoImage = "momo.png",
                         MemberID = "pok",
-                        Name = "Finding Nemo"
+                        Name = "Momo"
                     },
                     new
                     {
                         //Bhakti
-                        FoodID = "black",
+                        FoodID = "chatepate",
                         GenreID = "snk",
-                        LogoImage = "black_panther.png",
+                        LogoImage = "chatepate.png",
                         MemberID = "pok",
-                        Name = "Black Panther"
+                        Name = "Chatepate"
                     });
 
                 });

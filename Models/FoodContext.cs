@@ -32,29 +32,29 @@ namespace FoodFavorites.Models
             modelBuilder.Entity<Food>().HasData(
 
 
-               //Srishant   - swap out foodID,Name & the IMG reference for your foods img reference. 
-               new { FoodID = "egg", Name = "Omelette - Sunny-Side-Up", GenreID = "brk", MemberID = "bur", LogoImage = "omel.png" },
-               new { FoodID = "steak", Name = "Well-Done Steak", GenreID = "lun", MemberID = "bur", LogoImage = "steak.png" },
-               new { FoodID = "biryani", Name = "Chicken Biryani", GenreID = "din", MemberID = "bur", LogoImage = "biryani.png" },
-               new { FoodID = "sandwich", Name = "Sandwiches", GenreID = "snk", MemberID = "bur", LogoImage = "sandwich.png" },
+               //Srishant   
+               new { FoodID = "omel", Name = "Omelette", GenreID = "brk", MemberID = "bur", LogoImage = "omel.png" },
+               new { FoodID = "stek", Name = "Well-Done Steak", GenreID = "lun", MemberID = "bur", LogoImage = "steak.png" },
+               new { FoodID = "biry", Name = "Chicken Biryani", GenreID = "din", MemberID = "bur", LogoImage = "biryani.png" },
+               new { FoodID = "sandwich", Name = "Sandwich", GenreID = "snk", MemberID = "bur", LogoImage = "sandwich.png" },
 
-               //Robert - swap out foodID,Name & the IMG reference for your foods img reference. 
+               //Robert - 
                new { FoodID = "westerno", Name = "Western Omelette", GenreID = "brk", MemberID = "har", LogoImage = "western_omelette.png" },
                new { FoodID = "frenchd", Name = "French Dip", GenreID = "lun", MemberID = "har", LogoImage = "french_dip.png" },
                new { FoodID = "gporkc", Name = "Glazed Pork Chops", GenreID = "din", MemberID = "har", LogoImage = "glazed_pork_chops.png" },
                new { FoodID = "tortc", Name = "Tortilla Chips", GenreID = "snk", MemberID = "har", LogoImage = "tortilla_chips.png" },
 
-               //Zilong- swap out foodID,Name & the IMG reference for your foods img reference. 
-               new { FoodID = "bun", Name = "steamed stuffed bun", GenreID = "brk", MemberID = "che", LogoImage = "steamed_stuffed_bun.png" },
-               new { FoodID = "yam", Name = "Fried carrot with yam", GenreID = "lun", MemberID = "che", LogoImage = "Fried_carrot_with_yam.png" },
-               new { FoodID = "carp", Name = "sweat and sour carp", GenreID = "din", MemberID = "che", LogoImage = "sweat_and_sour_carp.png" },
-               new { FoodID = "cookie", Name = "cookie", GenreID = "snk", MemberID = "che", LogoImage = "cookie.png" },
+               //Zilong- 
+               new { FoodID = "steamb", Name = "Steamed Stuffed Bun", GenreID = "brk", MemberID = "che", LogoImage = "steamed_bun.png" },
+               new { FoodID = "fcarroty", Name = "Fried Carrot with Yam", GenreID = "lun", MemberID = "che", LogoImage = "fried_carrot_with_yam.png" },
+               new { FoodID = "sweetnscarp", Name = "Sweat and Sour Carp", GenreID = "din", MemberID = "che", LogoImage = "sweat_and_sour_carp.png" },
+               new { FoodID = "cooki", Name = "cookie", GenreID = "snk", MemberID = "che", LogoImage = "cookie.png" },
 
-               //Bhakti   - swap out foodID,Name & the IMG reference for your foods img reference. 
-               new { FoodID = "cheese", Name = "Bhakti breakfast food name here", GenreID = "brk", MemberID = "pok", LogoImage = "2_fast_2_furious.png" },
-               new { FoodID = "nemo", Name = "Bhakti lunch food name here", GenreID = "lun", MemberID = "pok", LogoImage = "finding_nemo.png" }, 
-               new { FoodID = "black", Name = "Bhakti dinner food name here", GenreID = "din", MemberID = "pok", LogoImage = "black_panther.png" }, 
-               new { FoodID = "blonde", Name = "Bhakti snack food name here", GenreID = "snk", MemberID = "pok", LogoImage = "legally_blonde.png" }
+               //Bhakti   -  
+               new { FoodID = "bec", Name = "Bacon Egg and Cheese sandwich", GenreID = "brk", MemberID = "pok", LogoImage = "egg_sandwich.png" },
+               new { FoodID = "curry", Name = "Curry", GenreID = "lun", MemberID = "pok", LogoImage = "curry.png" }, 
+               new { FoodID = "momo", Name = "Momo", GenreID = "din", MemberID = "pok", LogoImage = "momo.png" }, 
+               new { FoodID = "chatepate", Name = "Chatepate", GenreID = "snk", MemberID = "pok", LogoImage = "chatepate.png" }
 
            );
         }

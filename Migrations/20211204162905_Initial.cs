@@ -85,20 +85,20 @@ namespace FoodFavorites.Migrations
                 values: new object[,]
                 {
                     //Srishant
-                    { "shrek", "com", "", null, "Shrek" },
-                    { "dragon", "act", "", null, "Dragon Ball Super" },
-                    { "black", "act", "", null, "Black Panther" },
-                    { "fast", "act", "", null, "2 Fast 2 Furious" },
+                    { "omel", "brk", "", null, "Omelette" },
+                    { "stek", "lun", "", null, "Steak" },
+                    { "biry", "din", "", null, "Biryani" },
+                    { "sandwich", "snk", "", null, "Sandwich" },
                     //Zilong
-                    { "saving", "act", "", null, "Saving Private Ryan" },
-                    { "castle", "act", "", null, "Castle Cagliostro" },
-                    { "pirates", "act", "", null, "Pirates of the Caribbean" },
-                    { "arsenic", "hor", "", null, "Arsenic and Old Lace" },
+                    { "steamb", "brk", "", null, "Steamed Buns" },
+                    { "fcarroty", "lun", "", null, "Fried Carrot with Yam" },
+                    { "sweetnscarp", "din", "", null, "Sweet and Sour Carp" },
+                    { "cooki", "snk", "", null, "Cookie" },
                     //Bhakti
-                    { "fail", "hor", "", null, "Fail Safe" },
-                    { "October", "dra", "", null, "October Sky" },
-                    { "silent", "hor", "", null, "Silent Hill" },
-                    { "nemo", "com", "", null, "Finding Nemo" },
+                    { "bec", "brk", "", null, "Bacon Egg and Cheese" },
+                    { "curry", "lun", "", null, "Curry" },
+                    { "momo", "din", "", null, "Momo" },
+                    { "chatepate", "snk", "", null, "Chatepate" },
                     //robert
                     { "westerno", "brk", "", null, "Western Omelette" },
                     { "frenchd", "lun", "", null, "French Dip" },

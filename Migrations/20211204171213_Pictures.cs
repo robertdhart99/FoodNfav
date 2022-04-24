@@ -15,9 +15,9 @@ namespace FoodFavorites.Migrations
             migrationBuilder.DeleteData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "dodgeball");
+                keyValue: "dodgeball"); 
+            
             //robert
-
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
@@ -50,7 +50,7 @@ namespace FoodFavorites.Migrations
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "blonde",
+                keyValue: "",
                 column: "LogoImage",
                 value: "legally_blonde.png");
 
@@ -170,28 +170,28 @@ namespace FoodFavorites.Migrations
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "dragon",
+                keyValue: "omel",
                 column: "LogoImage",
                 value: "");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "fail",
+                keyValue: "stek",
                 column: "LogoImage",
                 value: "");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "fast",
+                keyValue: "biry",
                 column: "LogoImage",
                 value: "");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "long",
+                keyValue: "sandwich",
                 column: "LogoImage",
                 value: "");
 
@@ -199,28 +199,28 @@ namespace FoodFavorites.Migrations
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "nemo",
+                keyValue: "steamb",
                 column: "LogoImage",
                 value: "");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "October",
+                keyValue: "fcarroty",
                 column: "LogoImage",
                 value: "");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "pirates",
+                keyValue: "sweetnscarp",
                 column: "LogoImage",
                 value: "");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "princess",
+                keyValue: "cooki",
                 column: "LogoImage",
                 value: "");
 
@@ -228,32 +228,32 @@ namespace FoodFavorites.Migrations
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "santa",
+                keyValue: "bec",
                 column: "LogoImage",
                 value: "");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "saving",
+                keyValue: "curry",
                 column: "LogoImage",
                 value: "");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "shrek",
+                keyValue: "momo",
                 column: "LogoImage",
                 value: "");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "shrek2",
+                keyValue: "chatepate",
                 column: "LogoImage",
                 value: "");
-
-            /*migrationBuilder.InsertData(
+            /*
+            migrationBuilder.InsertData(
                 table: "Foods",
                 columns: new[] { "FoodID", "GenreID", "LogoImage", "MemberID", "Name" },
                 values: new object[,]

@@ -9,12 +9,12 @@ namespace FoodFavorites.Migrations
             migrationBuilder.DeleteData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "anchor");
+                keyValue: "westerno");
 
             migrationBuilder.DeleteData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "dodgeball");
+                keyValue: "frenchd");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -22,12 +22,12 @@ namespace FoodFavorites.Migrations
             migrationBuilder.InsertData(
                 table: "Foods",
                 columns: new[] { "FoodID", "GenreID", "LogoImage", "MemberID", "Name" },
-                values: new object[] { "anchor", "com", "anchor_man.png", "har", "Anchor Man" });
+                values: new object[] { "westerno", "brk", "western_omelette.png", "har", "Western Omelette" });
 
             migrationBuilder.InsertData(
                 table: "Foods",
                 columns: new[] { "FoodID", "GenreID", "LogoImage", "MemberID", "Name" },
-                values: new object[] { "dodgeball", "com", "dodgeball.png", "har", "Dodgeball" });
+                values: new object[] { "frenchd", "lun", "french_dip.png", "har", "French Dip" });
         }
     }
 }

@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <header class="text-center text-white">
-            <h1 class="bg-primary mt-3 p-3" id="movieText">Movies7</h1>
+            <h1 class="bg-primary mt-3 p-3" id="movieText">Food Favorites</h1>
 
             @* show any message in TempData *@
             @if (TempData["message"] != null)
@@ -26,7 +26,7 @@
                 <h5 class="bg-info p-2" id="Favorites">
                     <a asp-controller="Favorites" asp-action="Index" class="text-white">
                         @(session.GetName() == null ? "My" : session.GetName() + "'s")
-                        Favorite Movies
+                        Favorite Foods
                     </a>
 
                     @* get number of Favorite teams from session and display in badge *@

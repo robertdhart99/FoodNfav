@@ -24,37 +24,30 @@ namespace FoodFavorites.Migrations
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
-                keyValue: "bea",
+                keyValue: "bur",
                 columns: new[] { "Bio", "Major", "Year" },
-                values: new object[] { "I like cars, watching anime and playing video games", "Information Techology", "Senior" });
+                values: new object[] { "I am Srishant BIO", "Information Techology", "Senior" });
 
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
-                keyValue: "bro",
+                keyValue: "che",
                 columns: new[] { "Bio", "Major", "Name", "Year" },
-                values: new object[] { "I'm a nerd.", "Information Techology - Software Development", "Brown Chris", "Junior" });
+                values: new object[] { "I'm a Zilong Chen BIO ", "Information Techology - Software Development", "Chen Zilong", "Junior" });
 
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
-                keyValue: "dan",
+                keyValue: "pok",
                 columns: new[] { "Bio", "Major", "Name", "Year" },
-                values: new object[] { "I am Ibukun Daniel but I also go by I.B.K", "Information Techology - Software Development || CS minor", "Daniel Ibukun", "Junior" });
-
-            migrationBuilder.UpdateData(
-                table: "Members",
-                keyColumn: "MemberID",
-                keyValue: "emi",
-                columns: new[] { "Bio", "Major", "Year" },
-                values: new object[] { "I'm a weeb and a furry.", "Information Techology - Software Development", "Junior" });
+                values: new object[] { "I am Bhakti pokhrel Bio", "Information Techology Test", "Pokhrel Bhakti", "Junior" });
 
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
                 keyValue: "har",
                 columns: new[] { "Bio", "Major", "Year" },
-                values: new object[] { "I am Robert Hart but I go by Bobby. I am about to finish my IT software dev and cybersecurity degrees. I love spending time outdoors but also like playing games.", "Information Techology - Software Development || Cyber Security", "Senior" });
+                values: new object[] { "I prefer to go by Bobby. I will be graduating in august with my IT software dev and cybersecurity degrees. I love to sail and hope to one day Sail around the world.", "Information Techology - Software Development || Cyber Security", "Senior" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -74,16 +67,16 @@ namespace FoodFavorites.Migrations
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
-                keyValue: "bro",
+                keyValue: "che",
                 column: "Name",
-                value: "Brown Chistopher");
+                value: "Chen Zilong");
 
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
-                keyValue: "dan",
+                keyValue: "pok",
                 column: "Name",
-                value: "Daniel Ibukunoluwa");
+                value: "Pokhrel Bhakti");
         }
     }
 }

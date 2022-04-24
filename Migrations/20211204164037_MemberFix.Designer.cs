@@ -35,23 +35,23 @@ namespace FoodFavorites.Migrations
                     b.HasData(
                         new
                         {
-                            GenreID = "com",
-                            Name = "Comedy"
+                            GenreID = "brk",
+                            Name = "Breakfast"
                         },
                         new
                         {
-                            GenreID = "hor",
-                            Name = "Horror"
+                            GenreID = "lun",
+                            Name = "Lunch"
                         },
                         new
                         {
-                            GenreID = "act",
-                            Name = "Action"
+                            GenreID = "din",
+                            Name = "Dinner"
                         },
                         new
                         {
-                            GenreID = "dra",
-                            Name = "Drama"
+                            GenreID = "snk",
+                            Name = "Snack"
                         });
                 });
 
@@ -67,32 +67,28 @@ namespace FoodFavorites.Migrations
 
                     b.ToTable("Members");
 
-                    b.HasData(
-                        new
-                        {
-                            MemberID = "bea",
-                            Name = "Beasley Chevaux"
-                        },
-                        new
-                        {
-                            MemberID = "bro",
-                            Name = "Brown Chistopher"
-                        },
-                        new
-                        {
-                            MemberID = "dan",
-                            Name = "Daniel Ibukunoluwa"
-                        },
-                        new
-                        {
-                            MemberID = "har",
-                            Name = "Hart Robert"
-                        },
-                        new
-                        {
-                            MemberID = "emi",
-                            Name = "Hempker Emily"
-                        });
+                b.HasData(
+                    new
+                    {
+                        MemberID = "bur",
+                        Name = "Burdhan Srishant"
+                    },
+                    new
+                    {
+                        MemberID = "che",
+                        Name = "Chen Zilong"
+                    },
+                    new
+                    {
+                        MemberID = "pok",
+                        Name = "Pokhrel Bhakti"
+                    },
+                    new
+                    {
+                        MemberID = "har",
+                        Name = "Hart Robert"
+                    });
+                        
                 });
 
             modelBuilder.Entity("FoodFavorites.Models.Foods", b =>
@@ -118,177 +114,155 @@ namespace FoodFavorites.Migrations
 
                     b.HasIndex("MemberID");
 
-                    b.ToTable("FoodsTable");
+                    b.ToTable("Foods"); // was FoodsTable 
 
                     b.HasData(
                         new
                         {
-                            MovieID = "shrek",
-                            GenreID = "com",
-                            LogoImage = "",
-                            MemberID = "emi",
-                            Name = "Shrek"
+                            //Srishant
+                            FoodID = "omel",
+                            GenreID = "brk",
+                            LogoImage = "omel.png",
+                            MemberID = "bur",
+                            Name = "Omelette"
                         },
-                        new
-                        {
-                            MovieID = "shrek2",
-                            GenreID = "com",
-                            LogoImage = "",
-                            MemberID = "emi",
-                            Name = "Shrek 2"
-                        },
-                        new
-                        {
-                            MovieID = "shrek3",
-                            GenreID = "com",
-                            LogoImage = "",
-                            MemberID = "emi",
-                            Name = "Shrek 3"
-                        },
-                        new
-                        {
-                            MovieID = "shrek4",
-                            GenreID = "com",
-                            LogoImage = "",
-                            MemberID = "emi",
-                            Name = "Shrek 4"
-                        },
-                        new
-                        {
-                            MovieID = "silent",
-                            GenreID = "hor",
-                            LogoImage = "",
-                            MemberID = "emi",
-                            Name = "Silent Hill"
-                        },
-                        new
-                        {
-                            MovieID = "long",
-                            GenreID = "com",
-                            LogoImage = "",
-                            MemberID = "har",
-                            Name = "Longest Yard"
-                        },
-                        new
-                        {
-                            MovieID = "pirates",
-                            GenreID = "act",
-                            LogoImage = "",
-                            MemberID = "har",
-                            Name = "Pirates of the Caribbean"
-                        },
-                        new
-                        {
-                            MovieID = "October",
-                            GenreID = "dra",
-                            LogoImage = "",
-                            MemberID = "har",
-                            Name = "October Sky"
-                        },
-                        new
-                        {
-                            MovieID = "princess",
-                            GenreID = "dra",
-                            LogoImage = "",
-                            MemberID = "har",
-                            Name = "Princess Bride"
-                        },
-                        new
-                        {
-                            MovieID = "anchor",
-                            GenreID = "com",
-                            LogoImage = "",
-                            MemberID = "har",
-                            Name = "Anchor Man"
-                        },
-                        new
-                        {
-                            MovieID = "dodgeball",
-                            GenreID = "com",
-                            LogoImage = "",
-                            MemberID = "har",
-                            Name = "Dodgeball"
-                        },
-                        new
-                        {
-                            MovieID = "castle",
-                            GenreID = "act",
-                            LogoImage = "",
-                            MemberID = "bro",
-                            Name = "Castle Cagliostro"
-                        },
-                        new
-                        {
-                            MovieID = "fail",
-                            GenreID = "hor",
-                            LogoImage = "",
-                            MemberID = "bro",
-                            Name = "Fail Safe"
-                        },
-                        new
-                        {
-                            MovieID = "saving",
-                            GenreID = "act",
-                            LogoImage = "",
-                            MemberID = "bro",
-                            Name = "Saving Private Ryan"
-                        },
-                        new
-                        {
-                            MovieID = "arsenic",
-                            GenreID = "hor",
-                            LogoImage = "",
-                            MemberID = "bro",
-                            Name = "Arsenic and Old Lace"
-                        },
-                        new
-                        {
-                            MovieID = "santa",
-                            GenreID = "com",
-                            LogoImage = "",
-                            MemberID = "bro",
-                            Name = "The Santa Clause"
-                        },
-                        new
-                        {
-                            MovieID = "fast",
-                            GenreID = "act",
-                            LogoImage = "",
-                            MemberID = "bea",
-                            Name = "2 Fast 2 Furious"
-                        },
-                        new
-                        {
-                            MovieID = "nemo",
-                            GenreID = "com",
-                            LogoImage = "",
-                            MemberID = "bea",
-                            Name = "Finding Nemo"
-                        },
-                        new
-                        {
-                            MovieID = "black",
-                            GenreID = "act",
-                            LogoImage = "",
-                            MemberID = "bea",
-                            Name = "Black Panther"
-                        },
-                        new
-                        {
-                            MovieID = "blonde",
-                            GenreID = "com",
-                            LogoImage = "",
-                            MemberID = "bea",
-                            Name = "Legally Blonde"
-                        },
-                        new
-                        {
-                            MovieID = "dragon",
-                            GenreID = "act",
-                            LogoImage = "",
-                            MemberID = "bea",
-                            Name = "Dragon Ball Super"
-                        });
+                    new
+                    {
+                        //Srishant
+                        FoodID = "stek",
+                        GenreID = "lun",
+                        LogoImage = "steak.png",
+                        MemberID = "bur",
+                        Name = "Steak"
+                    },
+                    new
+                    {
+                        //Srishant
+                        FoodID = "biry",
+                        GenreID = "din",
+                        LogoImage = "biryani.png",
+                        MemberID = "bur",
+                        Name = "Biryani"
+                    },
+                    new
+                    {
+                        //Srishant
+                        FoodID = "sandwich",
+                        GenreID = "snk",
+                        LogoImage = "sandwich.png",
+                        MemberID = "bur",
+                        Name = "Sandwich"
+                    },
+
+                    new
+                    {
+                        //Robert Hart
+                        FoodID = "westerno",
+                        GenreID = "brk",
+                        LogoImage = "western_omelette.png",
+                        MemberID = "har",
+                        Name = "Western Omelette"
+                    },
+                    new
+                    {
+                        //Robert Hart
+                        FoodID = "frenchd",
+                        GenreID = "lun",
+                        LogoImage = "french_dip.png",
+                        MemberID = "har",
+                        Name = "French Dip"
+                    },
+                    new
+                    {
+                        //Robert Hart
+                        FoodID = "gporkc",
+                        GenreID = "din",
+                        LogoImage = "glazed_pork_chops.png",
+                        MemberID = "har",
+                        Name = "Glazed Pork Chops"
+                    },
+                    new
+                    {
+                        //Robert Hart
+                        FoodID = "tortc",
+                        GenreID = "snk",
+                        LogoImage = "tortilla_chips.png",
+                        MemberID = "har",
+                        Name = "Tortilla Chips"
+                    },
+                    new
+                    {
+                        //Zilong
+                        FoodID = "steamb",
+                        GenreID = "brk",
+                        LogoImage = "steamed_bun.png",
+                        MemberID = "che",
+                        Name = "Steamed Bun"
+                    },
+                    new
+                    {
+                        //Zilong
+                        FoodID = "fcarroty",
+                        GenreID = "lun",
+                        LogoImage = "fried_carrot_with_yam.png",
+                        MemberID = "che",
+                        Name = "Fried Carrot with Yam"
+                    },
+                    new
+                    {
+                        //Zilong
+                        FoodIDD = "sweetnscarp",
+                        GenreID = "din",
+                        LogoImage = "sweet_and_sour_carp.png",
+                        MemberID = "che",
+                        Name = "Sweet and Sour Carp"
+                    },
+                    new
+                    {
+                        //Zilong
+                        FoodID = "cooki",
+                        GenreID = "snk",
+                        LogoImage = "cookie.png",
+                        MemberID = "che",
+                        Name = "Cookie"
+                    },
+                    new
+                    {
+                        //Bhakti
+                        FoodID = "bec",
+                        GenreID = "brk",
+                        LogoImage = "egg_sandwich.png",
+                        MemberID = "pok",
+                        Name = "Bacon Egg and Cheese sandwich"
+                    },
+                    new
+                    {
+                        //Bhakti
+                        FoodID = "curry",
+                        GenreID = "lun",
+                        LogoImage = "curry.png",
+                        MemberID = "pok",
+                        Name = "Curry"
+                    },
+                    new
+                    {
+                        //Bhakti
+                        FoodID = "momo",
+                        GenreID = "din",
+                        LogoImage = "momo.png",
+                        MemberID = "pok",
+                        Name = "Momo"
+                    },
+                    new
+                    {
+                        //Bhakti
+                        FoodID = "chatepate",
+                        GenreID = "snk",
+                        LogoImage = "chatepate.png",
+                        MemberID = "pok",
+                        Name = "Chatepate"
+                    });
+
                 });
 
             modelBuilder.Entity("FoodFavorites.Models.Foods", b =>

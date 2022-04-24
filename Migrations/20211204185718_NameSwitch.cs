@@ -9,30 +9,24 @@ namespace FoodFavorites.Migrations
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
-                keyValue: "bea",
+                keyValue: "bur",
                 column: "Name",
-                value: "Chevaux Beasley");
+                value: "Burdhan Srishant");
 
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
-                keyValue: "bro",
+                keyValue: "che",
                 column: "Name",
-                value: "Chris Brown");
+                value: "Chen Zilong");
 
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
-                keyValue: "dan",
+                keyValue: "pok",
                 column: "Name",
-                value: "Ibukun Daniel");
+                value: "Pokhrel Bhakti");
 
-            migrationBuilder.UpdateData(
-                table: "Members",
-                keyColumn: "MemberID",
-                keyValue: "emi",
-                column: "Name",
-                value: "Emily Hempker");
 
             migrationBuilder.UpdateData(
                 table: "Members",
@@ -47,30 +41,23 @@ namespace FoodFavorites.Migrations
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
-                keyValue: "bea",
+                keyValue: "bur",
                 column: "Name",
-                value: "Beasley Chevaux");
+                value: "Burdhan Srishant");
 
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
-                keyValue: "bro",
+                keyValue: "che",
                 column: "Name",
-                value: "Brown Chris");
+                value: "Chen Zilong");
 
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
-                keyValue: "dan",
+                keyValue: "pok",
                 column: "Name",
-                value: "Daniel Ibukun");
-
-            migrationBuilder.UpdateData(
-                table: "Members",
-                keyColumn: "MemberID",
-                keyValue: "emi",
-                column: "Name",
-                value: "Hempker Emily");
+                value: "Pokhrel Bhakti");
 
             migrationBuilder.UpdateData(
                 table: "Members",
