@@ -11,7 +11,7 @@ namespace FoodFavorites.Migrations
                 keyColumn: "MemberID",
                 keyValue: "che",
                 column: "Bio",
-                value: "che description goes here (TheLid migration) ");
+                value: "I'm Zilong Chen. Why don't you listen to dubstep?");
 
             migrationBuilder.UpdateData(
                 table: "Members",

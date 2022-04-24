@@ -71,17 +71,17 @@ namespace FoodFavorites.Migrations
                     new
                     {
                         MemberID = "bur",
-                        Name = "Burdhan Srishant"
+                        Name = "Srishant Burdhan"
                     },
                     new
                     {
                         MemberID = "che",
-                        Name = "Chen Zilong"
+                        Name = "Zilong Chen"
                     },
                     new
                     {
                         MemberID = "pok",
-                        Name = "Pokhrel Bhakti"
+                        Name = "Bhakti Pokhrel"
                     },
                     new
                     {

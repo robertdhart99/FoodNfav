@@ -26,28 +26,28 @@ namespace FoodFavorites.Migrations
                 keyColumn: "MemberID",
                 keyValue: "bur",
                 columns: new[] { "Bio", "Major", "Year" },
-                values: new object[] { "I am Srishant BIO", "Information Techology", "Senior" });
+                values: new object[] { "I go by Sri for short as my name is sometimes hard to pronounce. I graduate around 2 years later with qualifications in Software Dev and Data Tech. I love playing soccer as I have played it professionally and casually as well. Along with all of that, I am an aspiring gamer/streamer and I really hope I can make a side gig out of this interest.", "Information Techology", "Senior" });
 
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
                 keyValue: "che",
                 columns: new[] { "Bio", "Major", "Name", "Year" },
-                values: new object[] { "I'm a Zilong Chen BIO ", "Information Techology - Software Development", "Chen Zilong", "Junior" });
+                values: new object[] { "I'm a Zilong Chen BIO (about us) ", "Information Techology - Software Development", "Zilong Chen", "Junior" });
 
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
                 keyValue: "pok",
                 columns: new[] { "Bio", "Major", "Name", "Year" },
-                values: new object[] { "I am Bhakti pokhrel Bio", "Information Techology Test", "Pokhrel Bhakti", "Junior" });
+                values: new object[] { "I am Bhakti Pokhrel and I love to watch and play soccer", "Information Techology Software Develepment", "Bhakti Pokhrel", "Junior" });
 
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
                 keyValue: "har",
                 columns: new[] { "Bio", "Major", "Year" },
-                values: new object[] { "I prefer to go by Bobby. I will be graduating in august with my IT software dev and cybersecurity degrees. I love to sail and hope to one day Sail around the world.", "Information Techology - Software Development || Cyber Security", "Senior" });
+                values: new object[] { "I prefer to go by Bobby. I will be graduating in august with my IT software dev and cybersecurity degrees. I love to sail and hope to one day Sail around the worlddd.", "Information Techology - Software Development || Cyber Security", "Senior" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

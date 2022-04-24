@@ -68,31 +68,27 @@ namespace FoodFavorites.Migrations
                     b.ToTable("Members");
 
                     b.HasData(
+                         new
+                         {
+                             MemberID = "bur",
+                             Name = "Burdhan Srishant"
+                         },
                         new
                         {
-                            MemberID = "bea",
-                            Name = "Beasley Chevaux"
+                            MemberID = "che",
+                            Name = "Chen Zilong "
                         },
                         new
                         {
-                            MemberID = "bro",
-                            Name = "Brown Chistopher"
-                        },
-                        new
-                        {
-                            MemberID = "dan",
-                            Name = "Daniel Ibukunoluwa"
+                            MemberID = "pok",
+                            Name = "Pokhrel Bhakti"
                         },
                         new
                         {
                             MemberID = "har",
                             Name = "Hart Robert"
-                        },
-                        new
-                        {
-                            MemberID = "emi",
-                            Name = "Hempker Emily"
                         });
+
                 });
 
             modelBuilder.Entity("FoodFavorites.Models.Foods", b =>

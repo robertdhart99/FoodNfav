@@ -10,12 +10,12 @@ namespace FoodFavorites.Migrations
             migrationBuilder.DeleteData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "ancor");
+                keyValue: "westerno");
 
             migrationBuilder.DeleteData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "dodgeball"); 
+                keyValue: "frenchd"); 
             
             //robert
             migrationBuilder.UpdateData(
@@ -50,88 +50,88 @@ namespace FoodFavorites.Migrations
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "",
+                keyValue: "omel",
                 column: "LogoImage",
-                value: "legally_blonde.png");
+                value: "omel.png");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "castle",
+                keyValue: "stek",
                 column: "LogoImage",
-                value: "castle_cagliostro.png");
+                value: "steak.png");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "dragon",
+                keyValue: "biry",
                 column: "LogoImage",
-                value: "db_super_broly.png");
+                value: "biryani.png");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "fail",
+                keyValue: "sandwich",
                 column: "LogoImage",
-                value: "fail_safe_64.png");
+                value: "sandwich.png");
 
             //Zilong
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "fast",
+                keyValue: "steamb",
                 column: "LogoImage",
-                value: "2_fast_2_furious.png");
+                value: "steamed_bun.png");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "long",
+                keyValue: "fcarroty",
                 column: "LogoImage",
-                value: "longest_yard.png");
+                value: "fried_carrot_with_yam.png");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "nemo",
+                keyValue: "sweetnscarp",
                 column: "LogoImage",
-                value: "finding_nemo.png");
+                value: "sweet_and_sour_carp.png");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "October",
+                keyValue: "cooki",
                 column: "LogoImage",
-                value: "october_sky.png");
+                value: "cookie.png");
 
             //Bhakti
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "pirates",
+                keyValue: "bec",
                 column: "LogoImage",
-                value: "pirates_caribbean.png");
+                value: "egg_sandwich.png");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "princess",
+                keyValue: "curry",
                 column: "LogoImage",
-                value: "princess_bride.png");
+                value: "curry.png");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "santa",
+                keyValue: "momo",
                 column: "LogoImage",
-                value: "santa_clause.png");
+                value: "momo.png");
 
             migrationBuilder.UpdateData(
                 table: "Foods",
                 keyColumn: "FoodID",
-                keyValue: "saving",
+                keyValue: "chatepate",
                 column: "LogoImage",
-                value: "saving_private_ryan.png");
+                value: "chatepate.png");
 
         }
 
@@ -252,15 +252,15 @@ namespace FoodFavorites.Migrations
                 keyValue: "chatepate",
                 column: "LogoImage",
                 value: "");
-            /*
+            
             migrationBuilder.InsertData(
                 table: "Foods",
                 columns: new[] { "FoodID", "GenreID", "LogoImage", "MemberID", "Name" },
                 values: new object[,]
                 {
-                    { "dodgeball", "com", "", "har", "Dodgeball" },
-                    { "anchor", "com", "", "har", "Anchor Man" }
-                });*/
+                    { "westerno", "brk", "", "har", "Western Omelette" },
+                    { "frenchd", "lun", "", "har", "French Dip" }
+                });
         }
     }
 }

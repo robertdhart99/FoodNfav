@@ -11,21 +11,21 @@ namespace FoodFavorites.Migrations
                 keyColumn: "MemberID",
                 keyValue: "bur",
                 column: "Name",
-                value: "Burdhan Srishant");
+                value: "Srishant Burdhan");
 
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
                 keyValue: "che",
                 column: "Name",
-                value: "Chen Zilong");
+                value: "Zilong Chen");
 
             migrationBuilder.UpdateData(
                 table: "Members",
                 keyColumn: "MemberID",
                 keyValue: "pok",
                 column: "Name",
-                value: "Pokhrel Bhakti");
+                value: "Bhakti Pokhrel");
 
 
             migrationBuilder.UpdateData(

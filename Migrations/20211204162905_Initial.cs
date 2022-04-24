@@ -73,7 +73,7 @@ namespace FoodFavorites.Migrations
                 columns: new[] { "MemberID", "Name" },
                 values: new object[,]
                 {
-                    { "bur", "Burdhan Srishant" },
+                    { "bur", "Burdhan Srishant(initial)" },
                     { "che", "Chen Zilong" },
                     { "pok", "Pokhrel Bhakti" },
                     { "har", "Hart Robert" }            
